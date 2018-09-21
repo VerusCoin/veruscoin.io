@@ -1,0 +1,65 @@
+#sapling-countdown {
+  display: block;
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  font-family: arial;
+  font-size: 20px;
+  text-align:center;
+  padding: 0 5px 0 5px;
+}
+.sapling-unload {
+    max-height: 0;
+}
+.sapling-load {
+    overflow-y: hidden;
+	max-height: 30px !important;
+	transition-property: all;
+    transition-delay: 1s;
+	transition-duration: 1.2s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+#sapling-countdown a {
+  color: white;
+  text-decoration:none;
+}
+#sapling-countdown a:hover {
+  text-decoration:underline;
+}
+#sapling-time {
+  display:inline-block;
+  float:none;
+  width: 220px;
+  margin: auto;
+  text-align: right;
+}
+@media (max-width: 375px) {
+    #sapling-time {
+        width: 190px;
+    }
+    #sapling-content-r {
+        display: none;
+    }
+}
+@media (max-width: 320px){
+    #sapling-countdown {
+        font-size: 12px;
+    }
+    #sapling-time {
+        width: 190px;
+    }
+    #sapling-content-r {
+        display: none;
+    }
+}
+.sapling-content {
+    display: inline-block;
+    float: none;
+    width: auto;
+}
+#sapling-content-l {
+  text-align: right;
+}
+#sapling-content-r {
+  text-align: left;
+}
