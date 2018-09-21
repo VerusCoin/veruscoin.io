@@ -51,7 +51,7 @@
 $(document).ready(function () {
     $("#sapling-countdown").addClass("sapling-load");
 });    
-var nextYear = moment.tz("2018-10-28 18:25", "America/Toronto");
+var nextYear = moment.tz("2018-10-29 16:34", "America/Toronto");
 
 $('#sapling-time').countdown(nextYear.toDate(), function(event) {
   $(this).html(event.strftime('%Ddays %-Hh %Mm %Ss'));
