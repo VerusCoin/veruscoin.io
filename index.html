@@ -27,7 +27,8 @@
 
     <link href="css/landing-page.min.css" rel="stylesheet">
     <link href="css/master.css" rel="stylesheet">
-      
+    
+
     <!-- Sapling Countdown Settings Begin -added sep 20- -->
       <link href="css/sapling.css" rel="stylesheet">
       <script src="js/jquery-3.3.1.min.js"></script>
@@ -62,7 +63,17 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
         <a class="navbar-brand" href="/"><img class="mr-0" src="img/VRSClogo.svg" style="height: 70px;"></a>
-            <ul class="list-inline mb-0 mr-4 pr-4">
+          <div id="mobile-button">
+            <span id="line-top" class="mobile-button-line"></span>
+            <span id="line-mid" class="mobile-button-line"></span>
+            <span class="mobile-button-line"></span>
+          </div>
+          <script>
+              $('#mobile-button').click( function() {
+                  $("#main-menu").toggleClass("mobile-menu-show");
+		      });
+          </script>
+            <ul id="main-menu" class="list-inline mb-0 mr-4 pr-4">
               <li class="list-inline-item">
                 <a class="nav-link js-scroll-trigger active" href="#getverus">Get Verus</a>
               </li>
@@ -70,7 +81,7 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
                 <a class="nav-link js-scroll-trigger active" href="https://medium.com/@veruscoin">Announcements</a>
               </li>
               <li class="list-inline-item">
-                <a href="#" data-toggle="modal" data-target="#wpModal">White Paper</a>
+                <a class="nav-link js-scroll-trigger active" style="text-decoration:underline !important;" href="#" data-toggle="modal" data-target="#wpModal">White Paper</a>
               </li>
               <li class="list-inline-item">
                 <a class="nav-link js-scroll-trigger active" href="#download">Download</a>
