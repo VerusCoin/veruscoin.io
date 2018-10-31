@@ -32,6 +32,10 @@ nav.navbar {
 	margin-bottom: 3rem;
 }
 
-p.checksum{
+p.checksum {
 	font-size: 0.6em; 
+	width: 32ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
