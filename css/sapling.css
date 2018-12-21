@@ -33,6 +33,11 @@
   margin: auto;
   text-align: right;
 }
+@media (max-width: 767px) {
+    .nomobile {
+        display: none;
+    }
+}
 @media (max-width: 375px) {
     #sapling-time {
         width: 190px;
