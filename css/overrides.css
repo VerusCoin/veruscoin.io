@@ -24,6 +24,12 @@ ul.link-items {
     display: block;
     text-align: right;
 }
+.featured-link-text {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding-top: 1.5rem;
+}
 @media (max-width: 767px) {
     .tagline-new {
         width: 100% !important;
