@@ -41,7 +41,9 @@
   </head>
 
   <body>
-      
+<!-- Scroll to top button -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!-- End -->
 <!-- Sapling Countdown Begin -added sep 20- //-->
       <div id="sapling-countdown" class="sapling-unload">
 <!--
@@ -474,5 +476,19 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
   </body>
 </html>
