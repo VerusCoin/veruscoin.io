@@ -11,9 +11,9 @@
 ul.link-items {
     font-size: 1.25rem;
     font-weight: 300;
-    padding: 0;
+    padding: 20px 0 0 0;
 }
 .link-items li {
-    margin: .5rem 0 0 0;
+    margin: .2rem 0 0 0;
     list-style-type: none;
 }
