@@ -8,14 +8,22 @@
     padding-top: 2rem!important;
     padding-bottom: 3rem!important;
 }
-ul.link-items {
+ul.link-items, ul.link-items-multi {
     font-size: 1.25rem;
     font-weight: 300;
     padding: 20px 0 0 0;
 }
-.link-items li {
+.link-items li, .link-items-multi li {
     margin: .2rem 0 0 0;
     list-style-type: none;
+}
+.link-items-multi li {
+    width: 100%;
+    float: left;
+}
+.link-items-multi li div {
+    display: inline-block;
+    width: 50%;
 }
 .tagline-new {
     width: 350px;
