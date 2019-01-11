@@ -63,4 +63,10 @@ ul.link-items, ul.link-items-multi {
         text-align: center !important;
         margin: 0 auto;
     }
+    section.pools .col-lg-8 {
+        height: 135px!important;
+    }
+    section.pools .pr-2 {
+        margin-top: -20px!important;
+    }
 }
