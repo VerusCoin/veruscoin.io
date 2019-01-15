@@ -2,6 +2,15 @@
 <html lang="en">
 
   <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132451034-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-132451034-1');
+</script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,7 +36,6 @@
 
     <link href="css/landing-page.min.css" rel="stylesheet">
     <link href="css/master.css" rel="stylesheet">
-    <link href="css/overrides.css" rel="stylesheet">
     
 
     <!-- Sapling Countdown Settings Begin -added sep 20- -->
@@ -38,6 +46,7 @@
       <script src="js/moment-timezone-with-data.min.js?v=0.5.14-2017c"></script>
     <!-- Sapling Countdown Settings End -->
 
+    <link href="css/overrides.css" rel="stylesheet">
   </head>
 
   <body>
@@ -45,14 +54,22 @@
       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <!-- End -->
 <!-- Sapling Countdown Begin -added sep 20- //-->
-      <div id="sapling-countdown" class="sapling-unload">
+<div id="sapling-countdown" class="sapling-unload">
 <!--
         <span id="sapling-content-l" class="sapling-content">Time to Sapling: </span>
         <span id="sapling-time"></span>
         <span id="sapling-content-r" class="sapling-content"> to block 227520</span>
  //-->
- <span class=sapling-content"><a href="#download">New VerusHash 2.0 is Live! <span class="nomobile">All Wallets Must Update to v0.5.0+</span></a></span>
-      </div>
+  <span class=sapling-content"><a href="#download">New VerusHash 2.0 is Live! <span class="nomobile">All Wallets Must Update to v0.5.0+</span></a></span> 
+ <!--<div class="news-slide-wrapper">
+  <div class="news-title" style="width: 0!important;"> </div>
+  <div class="news-slide" style="width: 100%!important;">
+    <div class="news-item"><a href="https://medium.com/veruscoin/how-to-start-cpu-mining-verus-coin-vrsc-from-your-laptop-in-under-5-minutes-f69c9aae340e" target="_blank">How to Start CPU Mining Verus Coin (VRSC) in 5 min</a></div>
+    <div class="news-item"><a href="https://veruscoin.io/downloads/papers/VerusPoP.pdf" target="_blank">Provable 51% Hash Attack Immunity: Verus' New "Proof of Power" Consensus</a></div>
+    <div class="news-item"><a href="https://medium.com/veruscoin/how-verus-solved-nothing-at-stake-and-weak-subjectivity-proof-of-stake-problems-b4dd6a85086e" target="_blank">Verus "PoP" Hybrid Consensus Solves Nothing at Stake and Weak Subjectivity</a></div>
+  </div> 
+</div>-->
+</div>
       
 <script type="text/javascript">
 $(document).ready(function () {

@@ -54,6 +54,198 @@ ul.link-items, ul.link-items-multi {
   border-radius: 4px;
 }
 
+/*********************/
+/* News Slider start */
+/*********************/
+.news-slide-wrapper {
+    width:100%;
+    height:60px;
+    /* margin-top:-15px; */
+}
+.news-title {
+    font-size:1.6rem;
+    font-color:inherit;
+    font-weight:normal;
+    text-align:center;
+    display: inline;
+    float: left;
+    position: relative;
+    widows: 80%;
+}
+.news-slide {
+    position: relative;
+    width:80%;
+    height:30px;
+    margin:auto;
+    overflow: hidden;
+    display: inline;
+    float: left;
+}
+.news-slide .news-item {
+	position: absolute;
+	width: 100%;
+    bottom:0;
+	text-align: center;
+	transform:translateX(100%);
+	-moz-transform:translateX(100%);
+	-webkit-transform:translateX(100%);
+}
+
+/* Define each panel, panel animation, and timing */
+.news-slide .news-item:nth-child(1) {
+	animation: panel-one 20s ease infinite;
+    -moz-animation: panel-one 20s ease infinite;
+	-webkit-animation: panel-one 20s ease infinite;
+}
+.news-slide .news-item:nth-child(2) {
+	animation: panel-two 20s ease infinite;
+    -moz-animation: panel-two 20s ease infinite;
+	-webkit-animation: panel-two 20s ease infinite;
+}
+.news-slide .news-item:nth-child(3) {
+	animation: panel-three 20s ease infinite;
+    -moz-animation: panel-three 20s ease infinite;
+	-webkit-animation: panel-three 20s ease infinite;
+}
+
+/* Pause entire animation on hover over wrapper div */
+.news-slide-wrapper:hover .news-item:nth-child(-n+3) {
+    animation-play-state: paused;
+    -moz-animation-play-state: paused;
+	-webkit-animation-play-state: paused;
+}
+
+/* Define keyframes for mozilla compatibility */
+@-moz-keyframes panel-one {
+	0% {
+		-moz-transform:translateX(100%);
+	}
+  1.666666666667% {
+    -moz-transform:translateX(0);
+  }
+	31.666666666666667% {
+		-moz-transform:translateX(0);
+	}
+	35% {
+		-moz-transform:translateX(-100%);
+	}
+	100%{
+		-moz-transform:translateX(-100%);
+	}
+}
+@-moz-keyframes panel-two {
+	0% {
+		-moz-transform:translateX(100%);
+	}
+	31.666666666666667% {
+		-moz-transform:translateX(100%);
+	}
+	35% {
+		-moz-transform:translateX(0);		
+	}
+	65% {
+		-moz-transform:translateX(0);		
+	}
+	68.333333333333333%{
+		-moz-transform:translateX(-100%);
+	}
+  100%{
+    -moz-transform:translateX(-100%);
+  }
+}
+@-moz-keyframes panel-three {
+	0% {
+		-moz-transform:translateX(100%);
+	}
+  65% {
+		-moz-transform:translateX(100%);
+	}
+	68.333333333333333% {
+		-moz-transform:translateX(0);		
+	}
+	98.333333333333333% {
+		-moz-transform:translateX(0);		
+	}
+	100% {
+		-moz-transform:translateX(-100%);		
+	}
+}
+
+/* Define keyframes for all other browsers */
+@-webkit-keyframes panel-one {
+	0% {
+		-webkit-transform:translateX(100%);
+	}
+  1.666666666667% {
+        -webkit-transform:translateX(0);
+  }
+	31.666666666666667% {
+		-webkit-transform:translateX(0);
+	}
+	35% {
+		-webkit-transform:translateX(-100%);
+	}
+	100%{
+		-webkit-transform:translateX(-100%);
+	}
+}
+@-webkit-keyframes panel-two {
+	0% {
+		-webkit-transform:translateX(100%);
+	}
+	31.666666666666667% {
+		-webkit-transform:translateX(100%);
+	}
+	35% {
+		-webkit-transform:translateX(0);		
+	}
+	65% {
+		-webkit-transform:translateX(0);		
+	}
+	68.333333333333333%{
+		-webkit-transform:translateX(-100%);
+	}
+  100%{
+    -webkit-transform:translateX(-100%);
+  }
+}
+@-webkit-keyframes panel-three {
+	0% {
+		-webkit-transform:translateX(100%);
+	}
+  65% {
+		-webkit-transform:translateX(100%);
+	}
+	68.333333333333333% {
+		-webkit-transform:translateX(0);		
+	}
+	98.333333333333333% {
+		-webkit-transform:translateX(0);		
+	}
+	100% {
+		-webkit-transform:translateX(-100%);		
+	}
+}
+
+@media (max-width: 767px) {
+    .sapling-load {
+        max-height: 40px !important;
+    }
+    .news-slide {
+        height: 40px;
+        line-height: 40px;
+        white-space: nowrap;
+    }
+    .news-item {
+        padding: 0 15px 0 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+/*********************/
+/* News Slider end   */
+/*********************/
+
 #myBtn:hover {
   background-color: #555;
 }
