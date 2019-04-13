@@ -130,19 +130,57 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
     <section class="features-icons bg-light text-center" style="padding-top: 4rem;">
       <div class="container">
         <div class="row">
+          <div class="col-lg-12">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-question m-auto text-primary"></i>
+              </div>
+              <h3><a href="#" data-toggle="modal" data-target="#How-To">How-To</a></h3>
+              <p class="lead mb-0">How do I get something done? In here you will find a collection of what we ran into and detailed descriptions of how we solved it.</p>
+            </div>
+          </div>
+          <!--div class="col-lg-3">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-info m-auto text-primary"></i>
+              </div>
+              <h3>FAQ OS independant</h3>
+              <p class="lead mb-0">Frequently Asked questions that apply to all Operating Systems</p>
+            </div>
+          </div-->
+          <!--div class="col-lg-3">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-windows m-auto text-primary"></i>
+              </div>
+              <h3>FAQ Windows</h3>
+              <p class="lead mb-0">Frequently Asked Question for Windows Systems</p>
+            </div>
+          </div-->
+          <!--div class="col-lg-3">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-linux m-auto text-primary"></i>
+              </div>
+              <h3>FAQ Linux</h3>
+              <p class="lead mb-0">Frequently Asked Question for Linux Systems</p>
+            </div>
+          </div-->
+        </div>
+        <div class="row">
           <div class="col-lg-3">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
-                <i class="fa fa-microchip m-auto text-primary"></i>
+                <i class="fa fa-apple m-auto text-primary"></i>
               </div>
-              <h3>How-To</h3>
-              <p class="lead mb-0">How To Section</p>
+              <h3>FAQ MacOS</h3>
+              <p class="lead mb-0">Frequently Asked Question for MacOS Systems</p>
             </div>
           </div>
           <div class="col-lg-3">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
-                <i class="fa fa-lock m-auto text-primary"></i>
+                <i class="fa fa-info m-auto text-primary"></i>
               </div>
               <h3>FAQ OS independant</h3>
               <p class="lead mb-0">Frequently Asked questions that apply to all Operating Systems</p>
@@ -151,17 +189,46 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
           <div class="col-lg-3">
             <div class="features-icons-item mx-auto mb-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
-		<i class="fa fa-low-vision m-auto text-primary"></i>
+                <i class="fa fa-windows m-auto text-primary"></i>
               </div>
-              <h3>FAQ OS Dependant</h3>
-              <p class="lead mb-0">Frequently Asked Question per supported Operating System</p>
+              <h3>FAQ Windows</h3>
+              <p class="lead mb-0">Frequently Asked Question for Windows Systems</p>
             </div>
           </div>
-         </div>
+          <div class="col-lg-3">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-linux m-auto text-primary"></i>
+              </div>
+              <h3>FAQ Linux</h3>
+              <p class="lead mb-0">Frequently Asked Question for Linux Systems</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <div class="modal fade" id="How-To" tabindex="-1" role="dialog" aria-labelledby="How-ToLabel" aria-hidden="true">
+      	<div class="modal-dialog" role="document">
+      		<div class="modal-content">
+      			<div class="modal-header">
+      				<h5 class="modal-title" id="How-ToLabel">How-To</h5>
+      				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      					<span aria-hidden="true">&times;</span>
+      				</button>
+      			</div>
+      			<div class="modal-body">
+      				<p><a href="https://medium.com/veruscoin/how-to-update-veruscoin-graphical-gui-wallet-to-0-4-0a-for-linux-686fc7a5b6e7">Verus Wallet installation guide (External)</a><br /></p>
+              <p><a href="https://medium.com/veruscoin/how-to-start-cpu-mining-verus-coin-vrsc-from-your-laptop-in-under-5-minutes-f69c9aae340e">Verus Beginners Mining guide (External)</a></p>
+      				<p><a href="https://medium.com/veruscoin/how-to-earn-vrsc-solo-mining-with-your-cpu-and-staking-mined-coins-aa27da76882c">Verus Beginners Staking guide (External)</a></p>
+              <p><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/How-To/HOW-TO%20Backup%2C%20Install%20or%20Update%20and%20Bootstrap%20your%20wallet.md">Backup, Install or Update and Bootstrap your wallet (External)</a></p>
+              <p><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/How-To/HOW-TO%20Shield%20Verus%20Coin%20via%20the%20CLI.md">Shield Verus Coins via Command Line Interface (External)</a></p>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        			</div>
+      			</div>
+      		</div>
+      	</div>
+      </div>
 
     <!-- Footer -->
     <footer class="footer bg-light">
