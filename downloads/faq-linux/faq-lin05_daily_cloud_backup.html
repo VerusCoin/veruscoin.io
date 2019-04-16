@@ -87,68 +87,87 @@
       </div>
     </header>
 
-    <section class="maincontent" id="How-To">
-      <section id="Native" class="native">
+    <section class="maincontent" id="FAQ-Linux">
+      <section id="Bootstrap" class="bootstrap">
         <div class="container">
 
 <!-- Insert title of FAQ - How-to in this section -->
-          <h2 class="mb-5">Guide to change Agama from Lite Mode to Native Mode.</h2>
+          <h2 class="mb-5">How to make a cloud daily backup of wallet.dat?</h2>
 
 <!-- Additional remarks -->
-          <p>Read completely before use.</p>
+          <p>Note: I use Google Cloud for my staking wallet and backups but the script works regardless of what you use; if you have timelocked coins, you will have to keep your wallet.dat file secure for a long, long time: it's crucial to maintain secure the staking instance as well as the storage..</p>
 
 <!-- Insert Vital information in this section -->
           <h4>Important General Information</h4>
           <pre>
-'Agama Wallet location` on different OS:
-Linux GUI: `~/.Komodo/VRSC`
-Mac OS: `/Users/<YOURUSERNAME>/Library/Application Support/Komodo/VRSC`
-Windows 10: `%AppData%\Roaming\Komodo\VRSC\`
+'Agama Wallet location` on Linux: `~/.Komodo/VRSC`
           </pre>
 
 <!-- Insert all Software links in this section -->
-          <h3>
+          <!--h4>
             Usefull auxiliary Windows software:
-          </h3>
+          </h4>
           <p>
             <a href="https://raylin.wordpress.com/downloads/md5-sha-1-checksum-utility/" target="_blank">Checksum utility</a><br>
             <a href="https://www.7-zip.org/" target="_blank">7-zip</a>
-          </p>
-          <h3>
+          </p-->
+          <!--h4>
             Necessary files:
-          </h3>
+          </h4>
           <p>
             Link 1: <a href="../../wallet.html" target="_blank">Download latest Wallet</a><br>
             Link 2: <a href="https://bootstrap.0x03.services/veruscoin/VRSC.html" target="_blank">Download Verus Bootstrap</a>
-          </p>
+          </p-->
 
 <!-- insert formatted procedure text in this section -->
           <h4>Procedure:</h4>
           <pre>
-1) Make sure you have your seed phrase and password you use to log into your Lite mode wallet available.
-2) First of all make a notition of your address and balance of VRSC you have in your wallet, before closing Agama.
-3) Make sure the latest version of Agama Wallet for Verus is installed.
-	3a) Download the latest Agama Verus Wallet from Link 1.
-	3b) Verify the SHA256 checksum of your download, so you have an untampered installer.
-	3c) Run the file you just downloaded to install it.
-4) Installing the bootstrap:
-  4a) Download the bootstrap from Link 2.
-  4b) Verify the SHA256 checksum of your download, to verify you have an untampered Bootstrap.
-  4c) Unpack (using 7-zip when in Windows) the downloaded archive to `Agama Wallet location`.
-5) Getting Agama ready for Native mode:
-	5a) Start Agama and select **Native mode** VRSC.
-	5b) You will get a red warning message about Zcash params. Dismiss it.
-	5c) From the dropdown box, select `Z.cash` and click `Download`.
-	5d) As soon as the download is finished, Agama will continu and bring you into your wallet. It will automatically start to synchronize the blockchain. Since we already put the majority of the chain in place, this will take just a few minutes.
-6) Importing your existing Address:
-	6a) Click `Import Key`.
-	6b) Enter your seed in the top field and click `Import`.
-	6c) You get a `Wallet Notification: Address imported` window. Dismiss it.
-	6d) Check if your Balance is correct.
+            If you use GCloud:
+            - create a new directory where we'll upload the backups (ie: mkdir /home/user/backup)
+            - create a storage bucket via GCloud console (ie bucket_verus)
+            - mount the bucket on your local machine (syntax is: gcsfuse <bucket_name> <local folder>; ie gcsfuse bucket_verus /home/user/backup)
+
+            The script can be crontab scheduled to run daily or you can run it manually; if you schedule it, you have to hardcode
+            the encryption passphrase; otherwise you can input it manually each time. You will have to install gnupg2 to encrypt
+            (sudo apt-get install gnupg2 gnupg-agent). As always: be sure to fully understand what the script does and why!
+            I left some echos to demonstration/test purposes, you can sefely remove all of them.
+
+#!/bin/bash
+
+# Customize the SOURCE and the DEST folders
+SOURCE_FOLDER=/home/XXXXX/.komodo/VRSC/
+DEST_FOLDER=/home/XXXX/backup/
+
+BCK_DATE=date +%Y-%m-%d.%H:%M
+
+SOURCE_FILE=wallet.dat
+DEST_FILE=$SOURCEFILE""$BCK_DATE
+
+ENCRYPT_EXT=".gpg"
+
+# all echo are for test purposes, feel free to delete them
+echo check variable
+echo SOURCE - $SOURCE_FOLDER
+echo SOURCE_FILE - $SOURCE_FILE
+echo DEST FILE - $DEST_FILE
+echo DEST - $DEST_FOLDER
+echo TO_BE_DEL - $DEST_FOLDER$SOURCE_FILE
+
+sleep 1
+
+cp  $SOURCE_FOLDER$SOURCE_FILE $DEST_FOLDER$DEST_FILE
+sleep 1
+# Customize the passphrase!!
+gpg2 --batch --yes -c --cipher-algo AES256 --passphrase="XXXXXX" $DEST_FOLDER$DEST_FILE
+sleep 1
+rm $DEST_FOLDER$DEST_FILE
+
+# Keep only last 6 days - BE SURE to fully understand how it works, as every "rm" command!
+find $DEST_FOLDER/wallet* -type f -mtime +6 -exec rm {} ;
           </pre>
 <!-- Insert closing words in this section -->
           <p>
-            If you followed these steps, you will have updated to the latest version of Agama for verus, installed the bootstrap and imported your existing address into Agama. You can now Stake your balance and use Private (sapling) addresses.
+            (submitted by @TexWiller)
           </p>
         </div>
       </section>
