@@ -31,12 +31,81 @@
   </head>
 
   <body>
-<!--__***Guide to install Bootstrap into Agama Wallet. Read it completely before using.***__
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="/"><img class="mr-0" src="../../img/VRSClogo.svg" style="height: 70px;"></a>
+          <div id="mobile-button">
+            <span id="line-top" class="mobile-button-line"></span>
+            <span id="line-mid" class="mobile-button-line"></span>
+            <span class="mobile-button-line"></span>
+          </div>
+          <script>
+              $('#mobile-button').click( function() {
+                  $("#main-menu").toggleClass("mobile-menu-show");
+          });
+          </script>
+            <ul id="main-menu" class="list-inline mb-0 mr-4 pr-4">
+              <!--li class="list-inline-item list-menu-item">
+                <a href="#" data-toggle="modal" data-target="#wpModal">Papers</a>
+              </li-->
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="../../index.html">Home</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="../../wallet.html">Verus wallet</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="../../download.html">Obtain VRSC</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="https://explorer.veruscoin.io" target="_blank">Explorer</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="https://medium.com/VerusCoin" target="_blank">Blog</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="../../service.html">FAQ & How-To</a>
+              </li>
+              <!--li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="#contributors">Contributors</a>
+              </li-->
+              <!--li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="#newsletter">Newsletter</a>
+              </li-->
+            </ul>
+        <!-- <a class="btn btn-primary" href="#">BUTTON!</a> -->
+      </div>
+    </nav>
 
-__*`Agama Wallet location` on different OS:*__
-Linux GUI:	`~/.Komodo/VRSC`
-Mac OS: 	`/Users/<YOURUSERNAME>/Library/Application Support/Komodo/VRSC`
-Windows 10: 	`%AppData%\Roaming\Komodo\VRSC\`
+    <header class="masthead text-white text-center" style="padding-top: 2rem;padding-bottom: 2rem;">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 mx-auto">
+            <!--<h1 class="mb-5">Verus</h1>-->
+          </div>
+          <div class="col-lg-4 mx-auto">
+            <img style="width:100%;" src="../../img/verustitle.svg" />
+            <span class="tagline-new">Truth and Privacy for All</span>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="showcase" id="How-To">
+        <section id="Bootstrap" class="bootstrap">
+          <div class="container">
+            <h2 class="mb-5">Guide to install Bootstrap into Agama Wallet.</h2>
+            <p>Read it completely before using.</p>
+
+            <pre>
+              Agama Wallet location` on different OS:
+                Linux GUI:	  `~/.Komodo/VRSC`
+                Mac OS: 	    `/Users/<YOURUSERNAME>/Library/Application Support/Komodo/VRSC`
+                Windows 10: 	`%AppData%\Roaming\Komodo\VRSC\`
+            </pre>
 
 __*Usefull auxilairy Windows software:*__
 Checksum utility:	https://raylin.wordpress.com/downloads/md5-sha-1-checksum-utility/
@@ -64,65 +133,66 @@ __*Procedure:*__
 
 If you followed these steps, you will have installed/updated the latest version of Agama for verus, made a backup of your wallet and installed the bootstrap.-->
 <!-- Footer -->
-<footer class="footer bg-light">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-				<p class="text-muted small mb-4 mb-lg-0">&copy; 2018 The Verus Project. All Rights Reserved.</p>
-			</div>
-			<div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-				<ul class="list-inline mb-0">
-					<li class="list-inline-item mr-3">
-						<a href="https://twitter.com/veruscoin">
-							<i class="fa fa-twitter fa-2x fa-fw"></i>
-						</a>
-					</li>
-					<li class="list-inline-item mr-3">
-							<a href="https://discord.gg/VRKMP2S">
-									<img style="height: 32px; position: relative; top: -7px" src="../../img/discord.png">
-							</a>
-					</li>
-					<li class="list-inline-item mr-3">
-						<a href="https://medium.com/@veruscoin">
-							<i class="fa fa-medium fa-2x fa-fw"></i>
-						</a>
-					</li>
-					<li class="list-inline-item mr-3">
-						<a href="https://reddit.com/r/veruscoin">
-							<i class="fa fa-reddit fa-2x fa-fw"></i>
-						</a>
-					</li>
-					<li class="list-inline-item mr-3">
-						<a href="https://bitcointalk.org/index.php?topic=4070404.0">
-							<i class="fa fa-bitcoin fa-2x fa-fw"></i>
-						</a>
-					</li>
-					<li class="list-inline-item">
-						<a href="https://github.com/veruscoin/veruscoin">
-							<i class="fa fa-github fa-2x fa-fw"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</footer>
 
-<script src="../../vendor/jquery/jquery.min.js"></script>
-<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script>
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-document.getElementById("myBtn").style.display = "block";
-} else {
-document.getElementById("myBtn").style.display = "none";
-}
-}
-function topFunction() {
-document.body.scrollTop = 0;
-document.documentElement.scrollTop = 0;
-}
-</script>
-</body>
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <p class="text-muted small mb-4 mb-lg-0">&copy; 2018 The Verus Project. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="https://twitter.com/veruscoin">
+                  <i class="fa fa-twitter fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://discord.gg/VRKMP2S">
+                  <img style="height: 32px; position: relative; top: -7px" src="../../img/discord.png">
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://medium.com/@veruscoin">
+                  <i class="fa fa-medium fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://reddit.com/r/veruscoin">
+                  <i class="fa fa-reddit fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://bitcointalk.org/index.php?topic=4070404.0">
+                  <i class="fa fa-bitcoin fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/veruscoin/veruscoin">
+                  <i class="fa fa-github fa-2x fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
 </html>
