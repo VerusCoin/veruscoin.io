@@ -88,28 +88,28 @@
     </header>
 
     <section class="maincontent" id="How-To">
-      <section id="Bootstrap" class="bootstrap">
+      <section id="Native" class="native">
         <div class="container">
 
 <!-- Insert title of FAQ - How-to in this section -->
-          <h2 class="mb-5">Guide to install Bootstrap into Agama Wallet.</h2>
+          <h2 class="mb-5">Shielding Verus Coin via the CLI.</h2>
 
 <!-- Additional remarks -->
           <p>Read it completely before using.</p>
 
 <!-- Insert Vital information in this section -->
-          <pre>
+          <!--pre>
 'Agama Wallet location` on different OS:
 Linux GUI: `~/.Komodo/VRSC`
 Mac OS: `/Users/<YOURUSERNAME>/Library/Application Support/Komodo/VRSC`
 Windows 10: `%AppData%\Roaming\Komodo\VRSC\`
-          </pre>
+          </pre -->
 
 <!-- Insert all Software links in this section -->
           <h3>
             Usefull auxilairy Windows software:
           </h3>
-          <p>
+          <!--p>
             <a href="https://raylin.wordpress.com/downloads/md5-sha-1-checksum-utility/" target="_blank">Checksum utility</a><br>
             <a href="https://www.7-zip.org/" target="_blank">7-zip</a>
           </p>
@@ -119,36 +119,42 @@ Windows 10: `%AppData%\Roaming\Komodo\VRSC\`
           <p>
             Link 1: <a href="../../wallet.html" target="_blank">Download latest Wallet</a><br>
             Link 2: <a href="https://bootstrap.0x03.services/veruscoin/VRSC.html" target="_blank">Download Verus Bootstrap</a>
-          </p>
+          </p-->
 
 <!-- insert formatted procedure text in this section -->
           <pre>
 Procedure:
 
-1) Make sure Agama is not active.
-2) If you already had Agama running, backup essential files:
-	2a) Go to `Agama Wallet location`
-	2b) copy `Wallet.dat` to a *SAFE* location
-	2c) copy `VRSC.conf` to a *SAFE* location
-	2d) Verify that both files are copied to your safe location
-3) Make sure the latest version of Agama Wallet for Verus is installed
-	3a) Download the latest Agama Verus Wallet from link 1, supplied above.
-	3b) Verify the SHA256 checksum of your download, to verify you have an untampered installer.
-	3c) Run the file you just downloaded to install it.
-4) Installing the bootstrap:
-  4a) Download the bootstrap from Link 2.
-  4b) Verify the SHA256 checksum of your download, to verify you have an untampered Bootstrap.
-  4c) Unpack (using 7-zip when in Windows) the downloaded archive to `Agama Wallet location`.
-5) If you had Agama running before, restore essential files:
-	5a) Go to `Agama Wallet location`
-	5b) Verify that your `Wallet.dat` is bigger than the one in this folder (if any is present)
-	5c) copy `Wallet.dat` from your *SAFE* location
-	5c) copy `VRSC.conf` from your *SAFE* location
-6) Start Agama
+You must first "shield coins" (send from a transparent Raddr to a shielded zaddr) to be able to use them in staking, when they first unlock.
+This is part of the Zcash protocol itself. The commands below assume you are in the Verus source code directory
+
+cd src/
+./fiat/verus z_shieldcoinbase
+
+You can either use an existing zaddr or use a new zaddr. To make a new zaddr:
+
+./fiat/verus z_getnewaddress
+
+Use the address the above command outputs in the z_shieldcoinbase command
+
+To shield all coinbase in your wallet, you can use "*" (quotes are important) and zaddr that is getting the funds:
+
+./fiat/verus z_shieldcoinbase "*" zcdZ7Ja5d6Nse9wbaQoMVRcJW2pJScWwQ9Kv2ohX7UPakohLpK3BwTi1ksxiEXXj8wxtuK4rq7MDeUsNFxtrFjcApwyoXXX
+
+To just shield a single address, specify that as the first argument:
+
+./fiat/verus z_shieldcoinbase RUWC2P9f39a4x4p4tDeN5B6VbhRiNPSbzz zcdZ7Ja5d6Nse9wbaQoMVRcJW2pJScWwQ9Kv2ohX7UPakohLpK3BwTi1ksxiEXXj8wxtuK4rq7MDeUsNFxtrFjcApwyoXXX
+
+Once the funds have moved to the zaddr and are confirmed, you can freely send them to any taddr, and they will be eligble for staking.
+
+To send from a certain zaddr to a transparent address, use z_sendmany. The following command sends 10 Verus to a given transparent address.
+
+TADDR=Ryouraddresss ./fiat/verus z_sendmany zcZpfuzzJqmNJ3fUJekvbnyuxuJe9eAURAHrMCvN2Nr7VuWjakb1LEw6j2etPcCnr45BRot7MaMbipuS5da162BfuUkFGxx "[{"address":"$TADDR","amount":10}]"
+
+(submitted by @dukeleto)
           </pre>
 <!-- Insert closing words in this section -->
           <p>
-            If you followed these steps, you will have installed/updated the latest version of Agama for verus, made a backup of your wallet and installed the bootstrap.
           </p>
         </div>
       </section>

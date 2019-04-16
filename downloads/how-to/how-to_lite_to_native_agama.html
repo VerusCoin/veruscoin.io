@@ -88,11 +88,11 @@
     </header>
 
     <section class="maincontent" id="How-To">
-      <section id="Bootstrap" class="bootstrap">
+      <section id="Native" class="native">
         <div class="container">
 
 <!-- Insert title of FAQ - How-to in this section -->
-          <h2 class="mb-5">Guide to install Bootstrap into Agama Wallet.</h2>
+          <h2 class="mb-5">Guide to change Agama from Lite Mode to Native Mode.</h2>
 
 <!-- Additional remarks -->
           <p>Read it completely before using.</p>
@@ -125,30 +125,30 @@ Windows 10: `%AppData%\Roaming\Komodo\VRSC\`
           <pre>
 Procedure:
 
-1) Make sure Agama is not active.
-2) If you already had Agama running, backup essential files:
-	2a) Go to `Agama Wallet location`
-	2b) copy `Wallet.dat` to a *SAFE* location
-	2c) copy `VRSC.conf` to a *SAFE* location
-	2d) Verify that both files are copied to your safe location
-3) Make sure the latest version of Agama Wallet for Verus is installed
-	3a) Download the latest Agama Verus Wallet from link 1, supplied above.
-	3b) Verify the SHA256 checksum of your download, to verify you have an untampered installer.
+1) Make sure you have your seed phrase and password you use to log into your Lite mode wallet available.
+2) First of all make a notition of your address and balance of VRSC you have in your wallet, before closing Agama.
+3) Make sure the latest version of Agama Wallet for Verus is installed.
+	3a) Download the latest Agama Verus Wallet from Link 1.
+	3b) Verify the SHA256 checksum of your download, so you have an untampered installer.
 	3c) Run the file you just downloaded to install it.
 4) Installing the bootstrap:
   4a) Download the bootstrap from Link 2.
   4b) Verify the SHA256 checksum of your download, to verify you have an untampered Bootstrap.
   4c) Unpack (using 7-zip when in Windows) the downloaded archive to `Agama Wallet location`.
-5) If you had Agama running before, restore essential files:
-	5a) Go to `Agama Wallet location`
-	5b) Verify that your `Wallet.dat` is bigger than the one in this folder (if any is present)
-	5c) copy `Wallet.dat` from your *SAFE* location
-	5c) copy `VRSC.conf` from your *SAFE* location
-6) Start Agama
+5) Getting Agama ready for Native mode:
+	5a) Start Agama and select **Native mode** VRSC.
+	5b) You will get a red warning message about Zcash params. Dismiss it.
+	5c) From the dropdown box, select `Z.cash` and click `Download`.
+	5d) As soon as the download is finished, Agama will continu and bring you into your wallet. It will automatically start to synchronize the blockchain. Since we already put the majority of the chain in place, this will take just a few minutes.
+6) Importing your existing Address:
+	6a) Click `Import Key`.
+	6b) Enter your seed in the top field and click `Import`.
+	6c) You get a `Wallet Notification: Address imported` window. Dismiss it.
+	6d) Check if your Balance is correct.
           </pre>
 <!-- Insert closing words in this section -->
           <p>
-            If you followed these steps, you will have installed/updated the latest version of Agama for verus, made a backup of your wallet and installed the bootstrap.
+            If you followed these steps, you will have updated to the latest version of Agama for verus, installed the bootstrap and imported your existing address into Agama. You can now Stake your balance and use Private (sapling) addresses.
           </p>
         </div>
       </section>
