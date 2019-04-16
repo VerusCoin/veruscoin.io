@@ -1,0 +1,465 @@
+wallet.html<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <title>VerusCoin | Service Page</title>
+
+    <link rel="shortcut icon" href="verus-favicon.png">
+
+	<link rel="image_src" href="https://veruscoin.io/img/veruslogolarge.png" />
+
+	<meta property="og:image" content="https://veruscoin.io/img/veruslogolarge.png" />
+	<meta property="og:url" content="https://veruscoin.io" />
+	<meta property="og:title" content="VerusCoin" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Community driven open source CPU mineable cryptocurrency with 50/50 Proof-of-Work/Proof-of-Stake, zk-SNARK zero-knowledge proof privacy." />
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link href="css/landing-page.min.css" rel="stylesheet">
+    <link href="css/master.css" rel="stylesheet">
+
+
+    <!-- Sapling Countdown Settings Begin -added sep 20- -->
+      <link href="css/sapling.css" rel="stylesheet">
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/jquery.countdown.min.js?v=2.2.0"></script>
+      <script src="js/moment.min.js?v=2.20.1"></script>
+      <script src="js/moment-timezone-with-data.min.js?v=0.5.14-2017c"></script>
+    <!-- Sapling Countdown Settings End -->
+
+    <link href="css/overrides.css" rel="stylesheet">
+  </head>
+
+  <body>
+<!-- Scroll to top button -->
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!-- End -->
+<!-- Sapling Countdown Begin -added sep 20- //-->
+<div id="sapling-countdown" class="sapling-unload">
+<!--
+        <span id="sapling-content-l" class="sapling-content">Time to Sapling: </span>
+        <span id="sapling-time"></span>
+        <span id="sapling-content-r" class="sapling-content"> to block 227520</span>
+ //-->
+  <span class="sapling-content"><a href="wallet.html">Mandatory Update to v0.5.6<span class="nomobile"> - All Wallets Must Update to v0.5.6 or Greater Immediately</span></a></span>
+ <!--<div class="news-slide-wrapper">
+  <div class="news-title" style="width: 0!important;"> </div>
+  <div class="news-slide" style="width: 100%!important;">
+    <div class="news-item"><a href="https://medium.com/veruscoin/how-to-start-cpu-mining-verus-coin-vrsc-from-your-laptop-in-under-5-minutes-f69c9aae340e" target="_blank">How to Start CPU Mining Verus Coin (VRSC) in 5 min</a></div>
+    <div class="news-item"><a href="https://veruscoin.io/downloads/papers/VerusPoP.pdf" target="_blank">Provable 51% Hash Attack Immunity: Verus' New "Proof of Power" Consensus</a></div>
+    <div class="news-item"><a href="https://medium.com/veruscoin/how-verus-solved-nothing-at-stake-and-weak-subjectivity-proof-of-stake-problems-b4dd6a85086e" target="_blank">Verus "PoP" Hybrid Consensus Solves Nothing at Stake and Weak Subjectivity</a></div>
+  </div>
+</div>-->
+</div>
+
+<script>
+$(document).ready(function () {
+    $("#sapling-countdown").addClass("sapling-load");
+});
+/*
+var nextYear = moment.tz("2018-10-29 16:34", "America/Toronto");
+
+$('#sapling-time').countdown(nextYear.toDate(), function(event) {
+  $(this).html(event.strftime('%Ddays %-Hh %Mm %Ss'));
+});
+*/
+</script>
+<!-- Sapling Countdown End //-->
+
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="/"><img class="mr-0" src="img/VRSClogo.svg" style="height: 70px;"></a>
+          <div id="mobile-button">
+            <span id="line-top" class="mobile-button-line"></span>
+            <span id="line-mid" class="mobile-button-line"></span>
+            <span class="mobile-button-line"></span>
+          </div>
+          <script>
+              $('#mobile-button').click( function() {
+                  $("#main-menu").toggleClass("mobile-menu-show");
+		      });
+          </script>
+            <ul id="main-menu" class="list-inline mb-0 mr-4 pr-4">
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="index.html">Home</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="Wallet.html">Verus wallet</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="download.html">Obtain Verus</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="https://explorer.veruscoin.io" target="_blank">Explorer</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="https://medium.com/VerusCoin" target="_blank">Blog</a>
+              </li>
+            </ul>
+        <!-- <a class="btn btn-primary" href="#">BUTTON!</a> -->
+      </div>
+    </nav>
+
+    <header class="masthead text-white text-center" style="padding-top: 2rem;padding-bottom: 2rem;">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 mx-auto">
+            <!--<h1 class="mb-5">Verus</h1>-->
+          </div>
+	  <div class="col-lg-4 mx-auto">
+	<img style="width:100%;" src="img/verustitle.svg" />
+         <span class="tagline-new">Truth and Privacy for All</span>
+	  </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="features-icons bg-light text-center" style="padding-top: 4rem;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-question m-auto text-primary"></i>
+              </div>
+              <h3>How-To</h3>
+              <p class="lead mb-0">
+                <a href="#" data-toggle="modal" data-target="#How-To">
+                  How do I get something done?
+                </a>
+                In here you will find a collection of what we ran into and detailed descriptions of how we solved it.</p>
+            </div>
+          </div>
+          <!--div class="col-lg-3">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-info m-auto text-primary"></i>
+              </div>
+              <h3>FAQ OS independant</h3>
+              <p class="lead mb-0">Frequently Asked questions that apply to all Operating Systems</p>
+            </div>
+          </div-->
+          <!--div class="col-lg-3">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-windows m-auto text-primary"></i>
+              </div>
+              <h3>FAQ Windows</h3>
+              <p class="lead mb-0">Frequently Asked Question for Windows Systems</p>
+            </div>
+          </div-->
+          <!--div class="col-lg-3">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-linux m-auto text-primary"></i>
+              </div>
+              <h3>FAQ Linux</h3>
+              <p class="lead mb-0">Frequently Asked Question for Linux Systems</p>
+            </div>
+          </div-->
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-info m-auto text-primary"></i>
+              </div>
+              <h3>
+                FAQ OS independant
+              </h3>
+              <p class="lead mb-0">Frequently Asked questions for
+                <a href="#" data-toggle="modal" data-target="#FAQ-OS">
+                  All Operating Systems
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-windows m-auto text-primary"></i>
+              </div>
+              <h3>
+                FAQ Windows
+              </h3>
+              <p class="lead mb-0">Frequently Asked Question for
+                <a href="#" data-toggle="modal" data-target="#FAQ-Win">Windows Systems
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-linux m-auto text-primary"></i>
+              </div>
+              <h3>
+                FAQ Linux
+              </h3>
+              <p class="lead mb-0">
+                Frequently Asked Questions for
+                  <a href="#" data-toggle="modal" data-target="#FAQ-Linux">
+                    Linux Systems
+                  </a>
+                </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-apple m-auto text-primary"></i>
+              </div>
+              <h3>
+                FAQ MacOS
+              </h3>
+              <p class="lead mb-0">
+                Frequently Asked Question for
+                <a href="#" data-toggle="modal" data-target="#FAQ-Mac">
+                  MacOS Systems
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <div class="modal fade" id="How-To" tabindex="-1" role="dialog" aria-labelledby="How-ToLabel" aria-hidden="true">
+      	<div class="modal-dialog" role="document">
+      		<div class="modal-content">
+      			<div class="modal-header">
+      				<h5 class="modal-title" id="How-ToLabel">How-To</h5>
+      				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      					<span aria-hidden="true">&times;</span>
+      				</button>
+      			</div>
+      			<div class="modal-body">
+      				<p>
+                <a href="https://medium.com/veruscoin/how-to-update-veruscoin-graphical-gui-wallet-to-0-4-0a-for-linux-686fc7a5b6e7" target="_blank">Verus Wallet installation guide (External)</a><br>
+                <a href="https://medium.com/veruscoin/how-to-start-cpu-mining-verus-coin-vrsc-from-your-laptop-in-under-5-minutes-f69c9aae340e" target="_blank">Verus Beginners Mining guide (External)</a><br>
+                <a href="https://medium.com/veruscoin/how-to-earn-vrsc-solo-mining-with-your-cpu-and-staking-mined-coins-aa27da76882c" target="_blank">Verus Beginners Staking guide (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/How-To/HOW-TO%20Backup%2C%20Install%20or%20Update%20and%20Bootstrap%20your%20wallet.md" target="_blank">Backup, Install or Update and Bootstrap your wallet (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/How-To/HOW-TO%20Shield%20Verus%20Coin%20via%20the%20CLI.md" target="_blank">Shield Verus Coins via Command Line Interface (External)</a>
+              </p>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        			</div>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+
+      <div class="modal fade" id="FAQ-OS" tabindex="-1" role="dialog" aria-labelledby="FAQ-OSLabel" aria-hidden="true">
+      	<div class="modal-dialog" role="document">
+      		<div class="modal-content">
+      			<div class="modal-header">
+      				<h5 class="modal-title" id="FAQ-OSLabel">FAQ OS Independant</h5>
+      				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      					<span aria-hidden="true">&times;</span>
+      				</button>
+      			</div>
+      			<div class="modal-body">
+              <p>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/01%3B%20Immature%20block%20unlock%20time%20calculation%20(Manual%20Calculation).md" target="_blank">Immature block unlock time calculation (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/02%3B%20Average%20time%20to%20find%20a%20block%20(Manual%20calculation).md" target="_blank">Average time to fin a block (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/03%3B%20mine%20rewards%20to%20a%20single%20Verus%20wallet%20(GUI%20%2B%20CLI).md" target="_blank">Mine rewards towards a single verus wallet (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/04%3B%20consolidate%20multiple%20wallet.dat%20files%20in%20one.md" target="_blank">Consolidate multiple Verus Wallets into one (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/05%3B%20Reward%20received%20per%20blocknummer.md" target="_blank">Reward received per blocknumber (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/06%3B%20POS%2C%20halving%2C%20block%20reward.md" target="_blank">PoS, halving, Block rewards (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/07%3B%20What%20are%20my%20VRSC%20worth.md" target="_blank">What is my VRSC worth? (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/09%3B%20How%20do%20you%20know%20a%20block%20was%20minted%20(staking%20reward).md" target="_blank">How do you know a block was minted? (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/13%3B%20How%20does%20staking%20work.md" target="_blank">How does staking work? (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/15%3B%20How%20can%20I%20tell%20the%20difference%20between%20stacked%20and%20mined%20coins.md" target="_blank">How to tell the difference between Staked and Mined coins (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/16%3B%20How%20can%20I%20check%20my%20immature%20balance%20in%20the%20GUI.md" target="_blank">How to check your immature balance in GUI (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/17%3B%20Unshield%20coin%20rewards%20and%20get%20them%20staking%20in%20CLI.md" target="_blank">Unshield coin rewards and get them staking in CLI (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/18%3B%20Your%20wallet.dat%20is%20not%20matching%20the%20blockchain.%20Please%20restart%20the%20wallet%20with%20-reindex%20param.md" target="_blank">Your Wallet is not matching the Blockchain. Please restart the wallet with -reindex param (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/19%3B%20What%20should%20I%20do%20if%20I%20end%20up%20on%20my%20own%20fork%20because%20of%20a%20network%20issue%20or%20having%20an%20old%20version%20of%20the%20wallet.md" target="_blank">What should I do if I end up on my own fork? (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/20%3B%20I%20followed%20the%20procedure%20in%20FAQ%2019%20and%20am%20still%20having%20problems%20with%20my%20wallet.md" target="_blank">What if I am still on a fork? (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/21%3B%20Mining%20pools.md" target="_blank">What are the mining pools I can join? (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/22%3B%20Staking%20pools.md" target="_blank">What are the staking pools I can join? (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-AllOS/24%3B%20Wallet.dat%20and%20VRSC.conf%20location.md" target="_blank">Where are my Wallet.dat and VRSC.conf located? (External)</a>
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a>-->
+              </p>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        			</div>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+
+      <div class="modal fade" id="FAQ-Win" tabindex="-1" role="dialog" aria-labelledby="FAQ-WinLabel" aria-hidden="true">
+      	<div class="modal-dialog" role="document">
+      		<div class="modal-content">
+      			<div class="modal-header">
+      				<h5 class="modal-title" id="FAQ-WinLabel">FAQ Windows</h5>
+      				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      					<span aria-hidden="true">&times;</span>
+      				</button>
+      			</div>
+      			<div class="modal-body">
+              <p>Sorry, no Windows specific questions have been answered yet... You may want to check the "FAQ OS independant".
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a-->
+              </p>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        			</div>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+
+      <div class="modal fade" id="FAQ-Linux" tabindex="-1" role="dialog" aria-labelledby="FAQ-LinuxLabel" aria-hidden="true">
+      	<div class="modal-dialog" role="document">
+      		<div class="modal-content">
+      			<div class="modal-header">
+      				<h5 class="modal-title" id="FAQ-LinuxLabel">FAQ Linux</h5>
+      				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      					<span aria-hidden="true">&times;</span>
+      				</button>
+      			</div>
+      			<div class="modal-body">
+              <p>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-Linux/01%3B%20install%20the%20Linux%20CLI.md" target="_blank">Install the Linux CLI wallet (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-Linux/02%3B%20Immature%20block%20unlock%20time%20calculation%20(Script).md" target="_blank">Script calculating time to unlock for immature rewards (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-Linux/05%3B%20Linux%20BASH%20Scripts%20To%20Make%20Minging%20Life%20Easier.md" target="_blank">Linux Bash scripts to make life easy (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-Linux/07%3B%20Cannot%20obtain%20a%20lock%20on%20data%20directory.md" target="_blank">Cannot obtain lock on data directory (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-Linux/12%3B%20Cloud%20daily%20backup%20of%20wallet.dat.md" target="_blank">Cloud daily backup of Wallet.dat (External)</a><br>
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a-->
+              </p>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        			</div>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+
+      <div class="modal fade" id="FAQ-Mac" tabindex="-1" role="dialog" aria-labelledby="FAQ-MacLabel" aria-hidden="true">
+      	<div class="modal-dialog" role="document">
+      		<div class="modal-content">
+      			<div class="modal-header">
+      				<h5 class="modal-title" id="FAQ-MacLabel">FAQ MacOS</h5>
+      				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      					<span aria-hidden="true">&times;</span>
+      				</button>
+      			</div>
+      			<div class="modal-body">
+              <p>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-MacOS/07%3B%20Cannot%20obtain%20a%20lock%20on%20data%20directory.md" target="_blank">Cannot obtain lock on data directory (External)</a><br>
+                <!-- Temporary link--><a href="https://github.com/Oink70/Verus-Help-Documents/blob/master/FAQ-MacOS/14%3B%20What%20versions%20of%20OSX-macOS%20are%20supported" target="_blank">What versions of MacOS are supported? (External)</a><br>
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a><br-->
+                <!-- Temporary link><a href="" target="_blank"> (External)</a-->
+              </p>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        			</div>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <p class="text-muted small mb-4 mb-lg-0">&copy; 2018 The Verus Project. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="https://twitter.com/veruscoin">
+                  <i class="fa fa-twitter fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                  <a href="https://discord.gg/VRKMP2S">
+                      <img style="height: 32px; position: relative; top: -7px" src="img/discord.png">
+                  </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://medium.com/@veruscoin">
+                  <i class="fa fa-medium fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://reddit.com/r/veruscoin">
+                  <i class="fa fa-reddit fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://bitcointalk.org/index.php?topic=4070404.0">
+                  <i class="fa fa-bitcoin fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/veruscoin/veruscoin">
+                  <i class="fa fa-github fa-2x fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  </body>
+</html>
