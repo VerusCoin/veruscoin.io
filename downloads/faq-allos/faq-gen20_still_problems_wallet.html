@@ -92,21 +92,21 @@
         <div class="container">
 
 <!-- Insert title of FAQ - How-to in this section -->
-          <h2 class="mb-5">REPLACE WITH TITLE.</h2>
+          <h2 class="mb-5">I followed the procedure in previous FAQ and am still having problems with my wallet.</h2>
 
 <!-- Additional remarks -->
-          <p>Read it completely before use.</p>
+          <p>Read it completely and carefully before use.</p>
 
 <!-- Insert Vital information in this section -->
           <pre>
-'Agama Wallet location` on different OS:
+'Agama Wallet location` and `VRSC.conf location` on different OS:
 Linux GUI: `~/.Komodo/VRSC`
 Mac OS: `/Users/<YOURUSERNAME>/Library/Application Support/Komodo/VRSC`
 Windows 10: `%AppData%\Roaming\Komodo\VRSC\`
           </pre>
 
 <!-- Insert all Software links in this section -->
-          <h3>
+          <!--h3>
             Usefull auxiliary Windows software:
           </h3>
           <p>
@@ -119,17 +119,75 @@ Windows 10: `%AppData%\Roaming\Komodo\VRSC\`
           <p>
             Link 1: <a href="../../wallet.html" target="_blank">Download latest Wallet</a><br>
             Link 2: <a href="https://bootstrap.0x03.services/veruscoin/VRSC.html" target="_blank">Download Verus Bootstrap</a>
-          </p>
+          </p-->
 
 <!-- insert formatted procedure text in this section -->
           <h4>Procedure:</h4>
           <pre>
-            REPLACE WITH PROCEDURE.
+To completely reset your wallet in the event of a fork, particularly if you've already followed the previous FAQ procedure,
+follow the steps below.
+
+1. Open your VRSC.conf file for editing.
+
+2. Add a line to VRSC.conf containing
+  (mac or linux)
+  exportdir=/home/<username>/
+
+  (or on windows
+  exportdir=c:\Users<username>\Desktop\
+
+3. Save the file and stop verusd for Agama just exit and wait for it to close completely. For the linux cli run ./verus stop, or for
+   the windows cli run verus.bat stop .
+
+4. Once your wallet is finished closing make a backup of your wallet.dat file somewhere safe. wallet.dat is located in the same directory
+   as your configuration file (see above). To make the backup just copy it to another directory, make sure to leave the original there
+   for the time being.
+
+5. Now restart your wallet by launching Agama or running verusd for the CLI.
+
+6. Now we'll export the wallet (this produces a different kind of file from what we did above).
+  (Agama)
+    Go to settings, scroll to the bottom and click CLI, select VRSC in that section, then below type z_exportwallet mywalletexport and
+    click the button below to run it.
+  (linux CLI)
+    run ./verus z_exportwallet mywalletexport
+  (win CLI)
+    run verus.bat z_exportwallet mywalletexport
+
+The exported wallet should be a file called mywalletexport in the location you set for exportdir in VRSC.conf. Keep this file secure,
+it has your plaintext private keys. Verify that the file is there and isn't empty.
+
+7. Stop Verus again by closing Agama or running ./verus stop for the linux CLI or verus.bat stop for the windows CLI.
+
+8. Making ABSOLUTELY SURE you have both the mywalletexport file and your wallet.dat backup in a safe place, delete your komodo/VRSC
+   directory and everything in it (you can optionally leave your VRSC.conf file, but everything else there should be deleted.
+
+9. At this point make sure you're on the latest version for your wallet by going to https://veruscoin.io/ and checking the downloads
+   section. If you need to upgrade do so now, before starting your wallet again.
+
+10. Restart your wallet by launching Agama or running verusd for the CLI. Allow it to start syncing.
+
+11. Once it has begun syncing, you can import your wallet. In either case, replace <PATHTOWALLETEXPORT> with the full path to your
+    wallet export file - on windows this might look like c:\Users\John\Desktop\mywalletexport , on linux or mac it would look
+    something like /home/john/mywalletexport .
+  (Agama)
+    Go to settings, scroll to the bottom and click CLI, select VRSC in that section, then below type
+      z_importwallet <PATHTOWALLETEXPORT>
+    and click the button below to run it.
+  (linux CLI)
+    Run ./verus z_importwallet <PATHTOWALLETEXPORT>
+  (win CLI)
+    Run verus.bat z_importwallet <PATHTOWALLETEXPORT>
+
+Depending on the number of addresses in your wallet and how far along you are on re-syncing, this may take several minutes to complete.
+Your balances will adjust as the chain syncs, as it only knows about the transactions that have happened in the blocks it has received
+and scanned. That means your balance will adjust as new blocks are scanned and won't reflect an accurate balance until you are fully
+synced.
           </pre>
 <!-- Insert closing words in this section -->
-          <p>
+          <!--p>
             REPLACE WITH CONCLUSIVE TEXT.
-          </p>
+          </p-->
         </div>
       </section>
     </section>

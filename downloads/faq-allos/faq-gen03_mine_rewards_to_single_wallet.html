@@ -92,21 +92,21 @@
         <div class="container">
 
 <!-- Insert title of FAQ - How-to in this section -->
-          <h2 class="mb-5">REPLACE WITH TITLE.</h2>
+          <h2 class="mb-5">How do I direct all my mined rewards to a single Verus wallet?</h2>
 
 <!-- Additional remarks -->
           <p>Read it completely before use.</p>
 
 <!-- Insert Vital information in this section -->
-          <pre>
+          <!--pre>
 'Agama Wallet location` on different OS:
 Linux GUI: `~/.Komodo/VRSC`
 Mac OS: `/Users/<YOURUSERNAME>/Library/Application Support/Komodo/VRSC`
 Windows 10: `%AppData%\Roaming\Komodo\VRSC\`
-          </pre>
+          </pre-->
 
 <!-- Insert all Software links in this section -->
-          <h3>
+          <!--h3>
             Usefull auxiliary Windows software:
           </h3>
           <p>
@@ -119,16 +119,46 @@ Windows 10: `%AppData%\Roaming\Komodo\VRSC\`
           <p>
             Link 1: <a href="../../wallet.html" target="_blank">Download latest Wallet</a><br>
             Link 2: <a href="https://bootstrap.0x03.services/veruscoin/VRSC.html" target="_blank">Download Verus Bootstrap</a>
-          </p>
+          </p-->
 
 <!-- insert formatted procedure text in this section -->
           <h4>Procedure:</h4>
           <pre>
-            REPLACE WITH PROCEDURE.
+IN AGAMA GUI
+Step 1 - First get your wallet address you want to mine to:
+       - If you don't have an address, click "Receive", click "Get New Address" and choose "Transparent Address" from the drop down.
+
+Step 2 - Next we need to retrieve our pubkey,
+       - go to "settings" and click on "<CLI>".
+       - In the <CLI> section, click on "Select Native Coin" for a dropdown list and select "VRSC native".
+       - Below "Type CLI compatible command", enter "validateaddress " and paste the address you copied.
+       - Click on "Execute"
+       - From the output find the long string after "pubkey", copy without the quotation marks.
+
+Step 3 - Set your PubKey
+       - Go to 'Settings', 'App Config (config.json)' and enter your pubkey(THELONGSTRINGCOPIED) into the 'Pubkey VRSC mining key' field.
+       - Click 'Save app config' to save these settings.
+
+IN VERUS-CLI
+Step 1 - First get your wallet address you want to mine to:
+         You can find an address if you already have previous transactions, or you can create a new one.  To find an address from a previous
+         transaction, use the command line verus listtransactions and copy the address found after "address".
+         To generate a new wallet address, use the command line verus "getnewaddress" and a new address will be created.
+
+Step 2 - Next, using your new address, enter the command with verus-cli verus validateaddress. From the output find the long string
+         after "pubkey", copy without the quotation marks.
+
+Step 3 - Set your PubKey
+         Last, use this pubkey when starting your daemon by adding the following line to the end of your command, just before
+         the "&" sign: -pubkey=THELONGSTRINGCOPIED
+
+Your rewards will now be mined to that address.  It would be a good idea to keep notes and associate the wallet address with the pubkey...
+Also to double check that you did validate the correct pubkey for the wallet address, making sure you made no errors.
+
           </pre>
 <!-- Insert closing words in this section -->
           <p>
-            REPLACE WITH CONCLUSIVE TEXT.
+            (submitted by @J Oliver Westbrook, edited by @Oink)
           </p>
         </div>
       </section>

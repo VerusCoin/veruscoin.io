@@ -92,21 +92,21 @@
         <div class="container">
 
 <!-- Insert title of FAQ - How-to in this section -->
-          <h2 class="mb-5">REPLACE WITH TITLE.</h2>
+          <h2 class="mb-5">I am mining. When can I expect to find a block?</h2>
 
 <!-- Additional remarks -->
           <p>Read it completely before use.</p>
 
 <!-- Insert Vital information in this section -->
-          <pre>
+          <!--pre>
 'Agama Wallet location` on different OS:
 Linux GUI: `~/.Komodo/VRSC`
 Mac OS: `/Users/<YOURUSERNAME>/Library/Application Support/Komodo/VRSC`
 Windows 10: `%AppData%\Roaming\Komodo\VRSC\`
-          </pre>
+          </pre-->
 
 <!-- Insert all Software links in this section -->
-          <h3>
+          <!--h3>
             Usefull auxiliary Windows software:
           </h3>
           <p>
@@ -119,16 +119,29 @@ Windows 10: `%AppData%\Roaming\Komodo\VRSC\`
           <p>
             Link 1: <a href="../../wallet.html" target="_blank">Download latest Wallet</a><br>
             Link 2: <a href="https://bootstrap.0x03.services/veruscoin/VRSC.html" target="_blank">Download Verus Bootstrap</a>
-          </p>
+          </p-->
 
 <!-- insert formatted procedure text in this section -->
-          <h4>Procedure:</h4>
+          <h4>Answer:</h4>
           <pre>
-            REPLACE WITH PROCEDURE.
+The average_time_to_find_one_block = ( NetworkHashrate / LocalHashrate ) * BlockTime
+
+One block = 24 coins (at this moment)
+NetworkHashrate = retrieved by `getmininginfo` command from </>CLI
+LocalHashrate = retrieved by `getmininginfo` command from </>CLI or from your external mining software.
+BlockTime = 60 seconds (average)
+
+Real example with - 24 threads Intel Skylake 2.0Ghz -
+
+average_time_to_find_one_block = ( 176488761499 / 9983712 ) * 60
+average_time_to_find_one_block = 1,060,660 seconds (294.63 hours or 12.28 days)
+
+Bear in mind that these are average times to find a block. In real life you may hit a block much sooner or later after finding the last.
+In the long run it averages out to the values predicted.
           </pre>
 <!-- Insert closing words in this section -->
           <p>
-            REPLACE WITH CONCLUSIVE TEXT.
+            (submitted by @TexWiller, edited by @Oink)
           </p>
         </div>
       </section>
