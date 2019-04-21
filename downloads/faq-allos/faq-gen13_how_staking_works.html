@@ -147,6 +147,16 @@ Regarding time locked coins:
   coins = coinbase coins). So, once your coins loose their time lock, you can unlock those coins as described in
   "HOW-TO Shield Verus Coin via the CLI". Once you've transferred the coins from your private address back to (one of)
   your public / transparent address(es) and you’ll automatically start staking.
+
+Check if you are staking in CLI:
+    ./verus getgenerate
+Enable staking by running the following:
+    ./verus setgenerate true 0
+
+Check if you are staking in GUI:
+    In Agama go to your 'Transactions' page and click on grey 'Mining +' button. Two Orange buttons will appear. If the
+    bbottom orange button says 'Stop Staking', it means that staking is active. If it says 'Startstaking'. click it to activate staking.
+
           </pre>
 <!-- Insert closing words in this section -->
           <p>
