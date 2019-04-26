@@ -55,7 +55,7 @@
                 <a class="nav-link js-scroll-trigger active" href="../../wallet.html">Verus wallet</a>
               </li>
               <li class="list-inline-item list-menu-item">
-                <a class="nav-link js-scroll-trigger active" href="../../download.html">Obtain VRSC</a>
+                <a class="nav-link js-scroll-trigger active" href="../../download.html">Get VRSC</a>
               </li>
               <li class="list-inline-item list-menu-item">
                 <a class="nav-link js-scroll-trigger active" href="https://explorer.veruscoin.io" target="_blank">Explorer</a>
@@ -134,6 +134,12 @@ Sending VRSC coins from your verus wallet to and another VRSC address (t-address
     ./verus sendtoaddress "VRSC_address" AMOUNT "Some comments here"
 Listing the latest VRSC transactions:
     ./verus listtransactions
+Send VRSC from PUBLIC address:
+    ./verus
+Shield reward coins from all public addresses:
+    ./verus z_shieldcoinbase "*" "Z-ADDRESS"
+Transfer X VRSX from (private) z-address to (public) R-address:
+    ./verus z_sendmany "Z-ADDRESS" [{\"amount\":X,\"address\":\"R-ADDRESS\"}]
 
 Disclaimer: Always read up before using a verus-cli command, more info on each command can be found using the following:
     ./verus help
