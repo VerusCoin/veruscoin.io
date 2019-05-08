@@ -35,7 +35,5 @@ nav.navbar {
 p.checksum {
 	font-size: 0.6em;
 	width: 38ch;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+	text-align:center;
 }
