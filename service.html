@@ -51,7 +51,7 @@
         <span id="sapling-time"></span>
         <span id="sapling-content-r" class="sapling-content"> to block 227520</span>
  //-->
-  <span class="sapling-content"><a href="wallet.html">Mandatory Update to v0.5.6a<span class="nomobile"> - All Wallets Must Update to v0.5.6a or Greater Immediately</span></a></span>
+  <span class="sapling-content"><a href="wallet.html">Mandatory Update to v0.5.6a<span class="nomobile"> - All Wallets Must Update to v0.5.6a or Greater</span></a></span>
  <!--<div class="news-slide-wrapper">
   <div class="news-title" style="width: 0!important;"> </div>
   <div class="news-slide" style="width: 100%!important;">
@@ -91,6 +91,9 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
           </script>
             <ul id="main-menu" class="list-inline mb-0 mr-4 pr-4">
               <li class="list-inline-item list-menu-item">
+                <a href="#" data-toggle="modal" data-target="#wpModal">Papers</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
                 <a class="nav-link js-scroll-trigger active" href="index.html">Home</a>
               </li>
               <li class="list-inline-item list-menu-item">
@@ -115,6 +118,29 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
         <!-- <a class="btn btn-primary" href="#">BUTTON!</a> -->
       </div>
     </nav>
+
+    <div class="modal fade" id="wpModal" tabindex="-1" role="dialog" aria-labelledby="wpModalLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<h5 class="modal-title" id="wpModalLabel">Subscribe to the newsletter</h5>
+    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    					<span aria-hidden="true">&times;</span>
+    				</button>
+    			</div>
+    			<div class="modal-body">
+    				<p>Hey! Before you check out the white papers <a href="https://goo.gl/forms/fzmXmTJwQmyR6HfU2" target="_blank">join our mailing list</a> so we can notify you of important network events, major new releases, and other timely information. We hate junk mail and will use this mailing list only very sparingly and your information will stay with us.</p>
+    				<p><a href="downloads/papers/VerusVision.pdf">Verus Vision Paper</a><br /></p>
+                    <p><a href="downloads/papers/VerusPoP.pdf">Verus Proof of Power</a></p>
+    				<p><a href="downloads/papers/VerusPhaseI.pdf">Verus Phase I White Paper</a></p>
+    			</div>
+    			<div class="modal-footer">
+    				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    				<a class="btn btn-primary d-block" href="https://goo.gl/forms/fzmXmTJwQmyR6HfU2" target="_blank">Subscribe</a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
 
     <header class="masthead text-white text-center" style="padding-top: 2rem;padding-bottom: 2rem;">
       <div class="overlay"></div>
