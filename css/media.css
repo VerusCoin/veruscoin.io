@@ -1,0 +1,39 @@
+/*nav.navbar.bg-light {
+	background-color: #649dda!important;
+}*/
+
+nav li.list-inline-item a {
+	color: #005b96;
+}
+
+header.masthead {
+	background: url("../img/masthead.svg") no-repeat center center;
+	background-size: cover;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.navbar-brand {
+	padding: 0;
+	margin: 0;
+}
+
+nav.navbar {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.call-to-action {
+	background: url("../img/masthead.svg") no-repeat center center;
+	background-size: cover;
+}
+
+.features-icons {
+	margin-bottom: 3rem;
+}
+
+p.checksum {
+	font-size: 0.6em;
+	width: 38ch;
+	text-align:center;
+}

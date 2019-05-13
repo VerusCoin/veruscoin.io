@@ -11,7 +11,7 @@
 
     <link rel="shortcut icon" href="verus-favicon.png">
 
-	<link rel="image_src" href="https://veruscoin.io/img/veruslogolarge.png" / >
+	<link rel="image_src" href="https://veruscoin.io/img/veruslogolarge.png" />
 
 	<meta property="og:image" content="https://veruscoin.io/img/veruslogolarge.png" />
 	<meta property="og:url" content="https://veruscoin.io" />
@@ -27,7 +27,7 @@
 
     <link href="css/landing-page.min.css" rel="stylesheet">
     <link href="css/master.css" rel="stylesheet">
-    
+
 
     <!-- Sapling Countdown Settings Begin -added sep 20- -->
       <link href="css/sapling.css" rel="stylesheet">
@@ -51,21 +51,21 @@
         <span id="sapling-time"></span>
         <span id="sapling-content-r" class="sapling-content"> to block 227520</span>
  //-->
-  <span class="sapling-content"><a href="#download">Mandatory Update to v0.5.6<span class="nomobile"> - All Wallets Must Update to v0.5.6 or Greater Immediately</span></a></span>
+  <span class="sapling-content"><a href="wallet.html">Mandatory Update to v0.5.6a<span class="nomobile"> - All Wallets Must Update to v0.5.6a or Greater Immediately</span></a></span>
  <!--<div class="news-slide-wrapper">
   <div class="news-title" style="width: 0!important;"> </div>
   <div class="news-slide" style="width: 100%!important;">
     <div class="news-item"><a href="https://medium.com/veruscoin/how-to-start-cpu-mining-verus-coin-vrsc-from-your-laptop-in-under-5-minutes-f69c9aae340e" target="_blank">How to Start CPU Mining Verus Coin (VRSC) in 5 min</a></div>
     <div class="news-item"><a href="https://veruscoin.io/downloads/papers/VerusPoP.pdf" target="_blank">Provable 51% Hash Attack Immunity: Verus' New "Proof of Power" Consensus</a></div>
     <div class="news-item"><a href="https://medium.com/veruscoin/how-verus-solved-nothing-at-stake-and-weak-subjectivity-proof-of-stake-problems-b4dd6a85086e" target="_blank">Verus "PoP" Hybrid Consensus Solves Nothing at Stake and Weak Subjectivity</a></div>
-  </div> 
+  </div>
 </div>-->
 </div>
-      
-<script type="text/javascript">
+
+<script>
 $(document).ready(function () {
     $("#sapling-countdown").addClass("sapling-load");
-});    
+});
 /*
 var nextYear = moment.tz("2018-10-29 16:34", "America/Toronto");
 
@@ -75,7 +75,7 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
 */
 </script>
 <!-- Sapling Countdown End //-->
-      
+
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
         <a class="navbar-brand" href="/"><img class="mr-0" src="img/VRSClogo.svg" style="height: 70px;"></a>
@@ -91,26 +91,32 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
           </script>
             <ul id="main-menu" class="list-inline mb-0 mr-4 pr-4">
               <li class="list-inline-item list-menu-item">
-                <a class="nav-link js-scroll-trigger active" href="#getverus">Get Verus</a>
+                <a href="#" data-toggle="modal" data-target="#wpModal">Papers</a>
               </li>
               <li class="list-inline-item list-menu-item">
-                <a class="nav-link js-scroll-trigger active" href="https://medium.com/VerusCoin" target="_blank">Blog</a>
+                <a class="nav-link js-scroll-trigger active" href="wallet.html">Verus wallet</a>
               </li>
               <li class="list-inline-item list-menu-item">
-                <a href="#" data-toggle="modal" data-target="#wpModal">White Paper</a>
-              </li>
-              <li class="list-inline-item list-menu-item">
-                <a class="nav-link js-scroll-trigger active" href="#download">Download</a>
+                <a class="nav-link js-scroll-trigger active" href="download.html">Get VRSC</a>
               </li>
               <li class="list-inline-item list-menu-item">
                 <a class="nav-link js-scroll-trigger active" href="https://explorer.veruscoin.io" target="_blank">Explorer</a>
               </li>
               <li class="list-inline-item list-menu-item">
-                <a class="nav-link js-scroll-trigger active" href="#contributors">Contributors</a>
+                <a class="nav-link js-scroll-trigger active" href="https://medium.com/VerusCoin" target="_blank">Blog</a>
               </li>
               <li class="list-inline-item list-menu-item">
-                <a class="nav-link js-scroll-trigger active" href="#newsletter">Newsletter</a>
+                <a class="nav-link js-scroll-trigger active" href="service.html">FAQ & How-To</a>
               </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="media.html">Media</a>
+              </li>
+              <!--li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="#contributors">Contributors</a>
+              </li-->
+              <!--li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="#newsletter">Newsletter</a>
+              </li-->
             </ul>
         <!-- <a class="btn btn-primary" href="#">BUTTON!</a> -->
       </div>
@@ -129,7 +135,7 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
 	  </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           </div>
-        </div> 
+        </div>
       </div>
     </header>
 
@@ -157,7 +163,7 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
           <div class="col-lg-3">
             <div class="features-icons-item mx-auto mb-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
-		<i class="fa fa-low-vision m-auto text-primary"></i>
+                <i class="fa fa-low-vision m-auto text-primary"></i>
               </div>
               <h3>Privacy</h3>
               <p class="lead mb-0">Verus leverages zk-SNARK zero-knowledge proofs in a <a href="https://medium.com/veruscoin/veruscoin-successfully-activates-sapling-with-new-improvements-to-verus-wallet-electrum-server-35b44d8bad5c" target="_blank"><strong>modified Zcash Sapling fork</strong></a> for optional private addresses that are completely opaque to the outside world.</p>
@@ -170,6 +176,20 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
               </div>
               <h3>Vision</h3>
               <p class="lead mb-0">Read about the tech and vision for Verus in the <a href="#" data-toggle="modal" data-target="#wpModal"><strong>Vision Paper and Phase I White Paper</strong></a>. Verus will introduce Public Blockchains as a Service (PBaaS).</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="fa fa-chain m-auto text-primary"></i>
+              </div>
+            </div>
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+              <H3>Make your own blockchain!</H3>
+              <h5>Try public blockchains as a service (PBaaS) now on Verus testnet!</h5>
+              <p class="lead mb-0">Auto Merge-mining and staking up to 15 blockchains on your PC, using <a href="https://medium.com/veruscoin/verus-community-responds-to-secret-fpga-mining-be5e9ce0eafb" target="_blank"><strong>VerusHash 2.0</strong></a> and the new Verus Enhanced Agama wallet, is currently in developement.</p>
             </div>
           </div>
         </div>
@@ -198,176 +218,46 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
 		</div>
 	</div>
 </div>
-<section class="showcase" id="download">
-<section class="showcasesub">
-  <div class="container">
-    <div>
-        <h2 class="mb-5" style="text-align: center;">Start Mining VRSC Now!</h2>
-        <div class="row" style="text-align: left; font-size: 1.25rem; font-weight: 300; margin-bottom: 40px;">
-            <div style="width: 100%;">Anyone with a capable computer can mine Verus Coin (VRSC)!</div>
-            <ul>
-                <li>No specialized hardware is required!</li>
-                <li>Mine with either CPU or GPU power.</li>
-                <li>Mine directly from the Verus Wallet or use the CLI Miner.</li>
-            </ul>
-            <div>However you mine VRSC, you'll need a Verus Coin address, which you can create using the wallet in either Lite or Native mode. If you need any help, join our <a href="https://discord.gg/VRKMP2S">official Discord</a> and reach out to the community support channel. Happy mining!
-            </div>
-            <h4 class="featured-link-text"><a href="https://medium.com/veruscoin/how-to-start-cpu-mining-verus-coin-vrsc-from-your-laptop-in-under-5-minutes-f69c9aae340e" target="_blank"><i>NEW!</i> Simple Verus Mining Quick Start Guide</a></h4>
-        </div>
-    </div>
-    <div class="row mb-4">
-      <div class="col-lg-3 my-auto mx-4 pl-4">
-        <div>
-		  <h3>Wallets</h3>
-	      <p><strong>System requirements:</strong> 64bit CPU/OS, CPU with AES-NI and AVX instructions. Windows, Linux (Ubuntu tested), or Mac High Sierra. 8GB Memory.</p>
-          <p><a href="https://github.com/VerusCoin/VerusCoin/releases/tag/v0.5.6" title="VerusCoin Release Notes" target="_blank">v0.5.6 Release Notes</a></p>
-	    </div>
-	  </div>
-	  <div class="col-lg-8">
-<div class="row">
-	<div class="col1 pr-2">
-		<p class="text-center"><i class="fa fa-windows fa-5x"></i></p>
-		<p class="text-center">Windows</p>
-		<a href="https://github.com/VerusCoin/Agama/releases/download/v0.5.6/Agama-win32-x64-v0.5.6.zip" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Windows Wallet v0.5.6" style="width:90%!important">Graphical Wallet v0.5.6</a>
-        <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/Agama/releases/download/v0.5.6/Agama-win32-x64-v0.5.6.zip.sha256">41a561eac1186d964861fcec667472e2dd82f24789524e809e18aab7507fff81</a></p>
-		<a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.5.6/Verus-CLI-Windows-v0.5.6.zip" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Windows CLI v0.5.6" style="width:90%!important">Command Line v0.5.6</a>
-        <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.5.6/Verus-CLI-Windows-v0.5.6.zip.sha256">ebf07aacc896b4acb3aa39655f4ad370af1ccb3220199db9f01f5251d6867949</a></p>
-	</div>
-	<div class="col2 px-2">
-		<p class="text-center"><i class="fa fa-linux fa-5x"></i></p>
-		<p class="text-center">Linux</p>
-		<a href="https://github.com/VerusCoin/Agama/releases/download/v0.5.6/Agama-linux-x64-v0.5.6.tar.gz" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Linux Wallet v0.5.6" style="width:90%!important">Graphical Wallet v0.5.6</a>
-        <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/Agama/releases/download/v0.5.6/Agama-linux-x64-v0.5.6.tar.gz.sha256">ae405050ae5b0e4c1344b31404a27fbfdbd4c884fe2f294d3426821bcc977617</a></p>
-		<a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.5.6/Verus-CLI-Linux-v0.5.6.tar.gz" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Linux CLI v0.5.6" style="width:90%!important">Command Line v0.5.6</a>
-        <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.5.6/Verus-CLI-Linux-v0.5.6.tar.gz.sha256">e5074eda5ad79e17ae766d67896d3d0e218aef6db4054b5f442be6a679f49209</a></p>
-	</div>
-	<div class="col3 pl-2">
-		<p class="text-center"><i class="fa fa-apple fa-5x"></i></p>
-		<p class="text-center">MacOS</p>
-		<a href="https://github.com/VerusCoin/Agama/releases/download/v0.5.6/Agama-MacOS-v0.5.6.dmg" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin MacOS Wallet v0.5.6" style="width:90%!important">Graphical Wallet v0.5.6</a>
-        <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/Agama/releases/download/v0.5.6/Agama-MacOS-v0.5.6.dmg.sha256">10a2634bfad2303fe00e52754e2da4d5be52ed4008567e4107f1d7da772f2365</a></p>
-		<a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.5.6/Verus-CLI-MacOS-v0.5.6.tar.gz" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin MacOS CLI v0.5.6" style="width:90%!important">Command Line v0.5.6</a>
-        <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.5.6/Verus-CLI-MacOS-v0.5.6.tar.gz.sha256">d873c1b7ccb6dc1a7df28d301c28cb810bc9df6c328f90b3165933b9985a0307</a></p>
-	</div>
-    </div>
-  </div>
-          </div>
-        </div>
-      </div>
-    </section>
-<section class="showcasesub">
-  <div class="container">
-    <div class="row mb-4" id="download">
-      <div class="col-lg-3 my-auto mx-4 pl-4">
-        <div>
-		  <h3>Miners</h3>
-	      <p><strong>System requirements:</strong> 64bit CPU/OS, CPU with AES-NI and AVX instructions. Windows or Linux (Ubuntu tested). 4GB Memory.</p>
-          <p><a href="http://direpool.com/veruscoin/index.php" title="VerusCoin Mining Profitability Calculator" target="_blank">Mining Calculator</a></p>
-	    </div>
-	  </div>
-	  <div class="col-lg-8">
-<div class="row">
-	<div class="col-lg-3 pr-2">
-		<p class="text-center"><i class="fa fa-windows fa-5x"></i></p>
-		<p class="text-center">Windows</p>
-		<a href="https://github.com/VerusCoin/nheqminer/releases/download/0.7.1/nheqminer-Windows-v0.7.1.zip" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Windows Miner">CLI Miner</a>
-	</div>
-	<div class="col-lg-3 px-2">
-		<p class="text-center"><i class="fa fa-linux fa-5x"></i></p>
-		<p class="text-center">Linux</p>
-		<a href="https://github.com/VerusCoin/nheqminer/releases/download/0.7.1/nheqminer-Linux-v0.7.1.tar.gz" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Linux Miner">CLI Miner</a>
-	</div>
-	<div class="col-lg-3 pl-2">
-        <p class="text-center"><i class="fa fa-apple fa-5x"></i></p>
-		<p class="text-center">MacOS</p>
-		<a href="https://github.com/VerusCoin/nheqminer/releases/download/0.7.1/nheqminer-MacOS-v0.7.1.tar.gz" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Linux Miner">CLI Miner</a>
-	</div>
-    </div>
 
-  </div>
-          </div>
-        </div>
-      </div>
-</section>
-<section id="pool" class="showcasesub pools">
-    <div class="container">
-                          
-    <div class="row mb-4">
-      <div class="col-lg-3 my-auto mx-4 pl-4">
-        <div>
-		  <h3>Pools</h3>
-	      <p>Choose from a growing list of community pools! Direct any questions to the appropriate pool operator in the pools channel on the <a href="https://discord.gg/VRKMP2S" target="_blank">Verus Discord</a>.</p>
-        </div>
-	  </div>
-    <div class="col-lg-8">
+<section id="Developement-state" class="call-to-action text-white text-justify">
+  <div class="overlay"></div>
+  <div class="container">
     <div class="row">
-	   <div class="col-lg-5 pr-2">
-            <ul class="link-items-multi">
-                <li><div><a href="https://luckpool.net/verus/" target="_blank">LuckPool</a></div><div>Fee: 1%</div></li>
-                <li><div><a href="http://vrsc.52hash.com/" target="_blank">52Hash</a></div><div>Fee: 1%</div></li>
-                <li><div><a href="http://vrsc.ginasismining.com/" target="_blank">Ginasis Mining</a></div><div>Fee: 0.75%</div></li>
-            </ul>
-        </div>
-        <div class="col-lg-5 pr-2">
-            <ul class="link-items-multi">
-                <li><div><a href="http://vrsc.jeepool.com/" target="_blank">JeePool</a></div><div>Fee: 1%</div></li>
-                <li><div><a href="https://vrsc.loudmining.com" target="_blank">LOUD Mining</a></div><div>Fee: 1%</div></li>
-                <li><div><a href="http://verus.thedreadpool.eu" target="_blank">The Dread Pool</a></div><div>Fee: 1%</div></li>
-            </ul>
-        </div>
-    </div>
-    </div>    
-</section>
-</section>
-    <section id="getverus" class="features-icons bg-light text-center">
-      <div class="container">
-        <div>
-         <h2 class="mb-5">Get Verus</h2>
-        <div class="row" style="text-align: left; font-size: 1.25rem; font-weight: 300; margin-bottom: 40px;">           
-            <div>There are several ways you can get some Verus Coin (VRSC). You can buy it on an exchange, mine it, and even earn more by helping secure the network through Staking the VRSC you have from your native wallet.  But our favorite way to earn Verus Coin is by helping out the Verus Community!</div>
-          </div>
-         </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="fa fa-line-chart m-auto text-primary"></i>
-              </div>
-              <h3>From an Exchange</h3>
-              <p class="lead mb-0">Verus is available on the following exchanges, with more coming soon!</p>
-                <ul class="link-items">
-                    <li><a href="https://wallet.crypto-bridge.org/market/BRIDGE.VRSC_BRIDGE.BTC/" title="Verus/BTC Trading on Crypto-Bridge" target="_blank">Crypto-Bridge</a></li>
-                    <li><a href="https://digitalprice.io/order?url=vrsc-btc" title="Verus/BTC Trading on DigitalPrice" target="_blank">Digital Price</a></li>
-                    <li><a href="https://app.stex.com/en/trade/pair/BTC/VRSC" title="Verus/BTC Trading on STEX" target="_blank">Stex</a></li>
-                    <li><a href="https://www.aacoin.com/#/trade?symbol=VRSC_BTC" title"Verus/BTC Trading on AAcoin" target="_blank">AAcoin</a></li>
-                </ul>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="fa fa-server m-auto text-primary"></i>
-              </div>
-              <h3>Mine Verus</h3>
-              <p class="lead mb-0"><a href="#download">Start mining Verus</a> using a computer! No specialized hardware required, just a capable CPU or GPU.  You can mine solo or join a pool.<br><br><a href="https://medium.com/veruscoin/how-to-start-cpu-mining-verus-coin-vrsc-from-your-laptop-in-under-5-minutes-f69c9aae340e">Get the Quick Start Guide Here</a></p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-		<i class="fa fa-trophy m-auto text-primary"></i>
-              </div>
-              <h3>Bounties</h3>
-              <p class="lead mb-0">Verus is a 100% community project.  And helping out the Verus community is one of the most rewarding ways to earn Verus! <br><br>Join us on <a href="https://discord.gg/VRKMP2S">Discord</a> to learn more!</p>
-            </div>
-          </div>
-        </div>
+      <div class="col-xl-9 mx-auto">
+        <h2 class="mb-4">Current focus points</h2>
       </div>
-    </section>
+      <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <p>Mobile wallets for iOS and Android are now at Beta-testing stage.<br></p>
+        <p>We are currently developing PBaas. The first PBaaS autochains have already been succesfully launched on public testnet and extensively tested with the help of our community.
+           The results are looking very good, although some fine-tuning is still necessary.<br>
+           We're now fixing minor issues and will implement further enhancements (like premines, auto-notarizations and payouts with the ability to add to the payouts in different billing periods) before running a second round of tests.<br>
+           Anyone can send more money to the notarization account of any blockchain and any billing period. Since stakers have the highest probability to notarize, funds can be raised to provide more return to stakers or boost merge miners and hashrate on a blockchain. (Check our <a href="https://discord.gg/VRKMP2S"  style="color:grey !important" target="_blank">discord</a> for up-to-date information)<br></P>
+        <p>VerusPay, the independent payment gateway plugin for Wordpress ecommerce sites has been developed up to version 0.3.1 and now supports payments in VRSC (Transparent & Private), ARRR (Private) and KMD (Transparent). In addition to that it is now possible for the store owner to withdraw funds to a predefined address with the click of a button. For more information connect to our <a href="https://discord.gg/VRKMP2S"  style="color:grey !important" target="_blank">discord</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section class="showcase" id="contributors">
     <section id="contributors" class="testimonials text-center">
       <div class="container">
         <h2 class="mb-5">Contributors</h2>
+        <div class="row">
+	  <div class="col-lg-3">
+	  </div>
+          <div class="col-lg-6">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-5" style="max-width: unset">
+              <h5>You!</h5>
+              <p class="font-weight-light mb-0">
+                That's right, YOU! Verus is a free and open source project. We hope to foster a healthy community of contributors. Check out our <a href="https://github.com/veruscoin/veruscoin">GitHub</a> and visit <a href="https://discord.gg/VRKMP2S">the Verus Discord channel</a> to chat and find ways to get involved! We also have a community on <a href="https://jq.qq.com/?_wv=1027&k=5rTnvcd">QQ</a>.<br>
+                We are also specifically looking for independant <b><u>developers</u></b> working on their own PBaaS autochain.<br>
+                You can also donate Verus to the project in VRSC or KMD at <span style="white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ</span> or with ETH at <span style="white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">0x06E2F78E650C88c6D89440E778004037FEAbefC5</span>.
+              </p>
+            </div>
+          </div>
+	  <div class="col-lg-3">
+	  </div>
+        </div>
         <div class="row">
           <div class="col-lg-4">
             <div class="testimonial-item mx-auto mb-5 mb-lg-5">
@@ -415,14 +305,15 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
           </div>
         </div>
         <div class="row">
-	  <div class="col-lg-3">
-	  </div>
+          <div class="col-lg-3">
+          </div>
           <div class="col-lg-6">
             <div class="testimonial-item mx-auto mb-5 mb-lg-5" style="max-width: unset">
-              <h5>You!</h5>
-		<h6>Contributors</h6>
-        <p class="font-weight-light mb-0">That's right, YOU! Verus is a free and open source project. We hope to foster a healthy community of contributors. Check out our <a href="https://github.com/veruscoin/veruscoin">GitHub</a> and visit <a href="https://discord.gg/VRKMP2S">the Verus Discord channel</a> to chat and find ways to get involved! We also have a community on <a href="https://jq.qq.com/?_wv=1027&k=5rTnvcd">QQ</a>. You can also donate Verus to the project in VRSC or KMD at <span style="white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ</span> or with ETH at <span style="white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word;">0x06E2F78E650C88c6D89440E778004037FEAbefC5</span>.</p>
-            </div>
+              <h5>Additional community contributors by Discord name</h5>
+              <H6>In no particular order</p>
+              <p class="font-weight-light mb-0">
+                John Westbrook, Ben O'Hanlon, 0x03, DeckerSu, Mammothine, Crupti, Paia, SadykovT, ok88, nmnm, Chris - Loud Mining, Godballz, Meyes, aelder, Hellcatz, Blackjok3r, SHossain, Oink, zpajk, LOUD Mining, Thoskk, Draeth, Fishyguts, Stretcher83
+              </div>
           </div>
 	  <div class="col-lg-3">
 	  </div>
@@ -450,38 +341,38 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
       <div class="container">
         <div class="row">
           <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-            <p class="text-muted small mb-4 mb-lg-0">&copy; 2018 The Verus Project. All Rights Reserved.</p>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; 2019 The Verus Project. All Rights Reserved.</p>
           </div>
           <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
             <ul class="list-inline mb-0">
               <li class="list-inline-item mr-3">
-                <a href="https://twitter.com/veruscoin">
-                  <i class="fa fa-twitter fa-2x fa-fw"></i>
+                <a href="https://twitter.com/veruscoin" title="Official Verus Twitter Feed">
+                  <img style="height: 32px; position: relative; top: -7px" src="img/twitter.svg">
                 </a>
               </li>
               <li class="list-inline-item mr-3">
-                  <a href="https://discord.gg/VRKMP2S">
-                      <img style="height: 32px; position: relative; top: -7px" src="img/discord.png">
+                  <a href="https://discord.gg/VRKMP2S" title="Verus Discord">
+                      <img style="height: 32px; position: relative; top: -7px" src="img/discord.svg">
                   </a>
               </li>
               <li class="list-inline-item mr-3">
-                <a href="https://medium.com/@veruscoin">
-                  <i class="fa fa-medium fa-2x fa-fw"></i>
+                <a href="https://medium.com/@veruscoin" title="Official Verus Medium">
+                  <img style="height: 32px; position: relative; top: -7px" src="img/medium.svg">
                 </a>
               </li>
               <li class="list-inline-item mr-3">
-                <a href="https://reddit.com/r/veruscoin">
-                  <i class="fa fa-reddit fa-2x fa-fw"></i>
+                <a href="https://reddit.com/r/veruscoin" title="Official Verus Reddit Feed">
+                  <img style="height: 32px; position: relative; top: -7px" src="img/reddit.svg">
                 </a>
               </li>
               <li class="list-inline-item mr-3">
-                <a href="https://bitcointalk.org/index.php?topic=4070404.0">
-                  <i class="fa fa-bitcoin fa-2x fa-fw"></i>
+                <a href="https://bitcointalk.org/index.php?topic=4070404.0" title="Verus thread on Bitcointalk">
+                  <img style="height: 32px; position: relative; top: -7px" src="img/bitcointalk.svg">
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://github.com/veruscoin/veruscoin">
-                  <i class="fa fa-github fa-2x fa-fw"></i>
+                <a href="https://github.com/veruscoin/veruscoin" title="Verus Github repository">
+                  <img style="height: 32px; position: relative; top: -7px" src="img/github.svg">
                 </a>
               </li>
             </ul>
