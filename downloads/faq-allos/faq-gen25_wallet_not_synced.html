@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
 
-    <title>VerusCoin | How-To | install/update the latest version of Agama for Verus, make a backup of your wallet and install the bootstrap</title>
+    <title>VerusCoin | How-To | repair unsynchronized wallet</title>
 
     <link rel="shortcut icon" href="verus-favicon.png">
 
@@ -92,43 +92,64 @@
         <div class="container">
 
 <!-- Insert title of FAQ - How-to in this section -->
-          <h2 class="mb-5">REPLACE WITH TITLE.</h2>
+          <h2 class="mb-5">My wallet is stuck on block number XXXX. It does not synchronize properly anymore.</h2>
 
 <!-- Additional remarks -->
           <p>Read it completely before use.</p>
 
 <!-- Insert Vital information in this section -->
           <pre>
-'Agama Wallet location` on different OS:
-Linux GUI: `~/.Komodo/VRSC`
-Mac OS: `/Users/<YOURUSERNAME>/Library/Application Support/Komodo/VRSC`
-Windows 10: `%AppData%\Roaming\Komodo\VRSC\`
+'Wallet & blockchain location` on different OS:
+Linux GUI:    `~/.Komodo/VRSC`
+Mac OS:       `/Users/<YOURUSERNAME>/Library/Application Support/Komodo/VRSC`
+Windows 10:   `%AppData%\Komodo\VRSC\`
           </pre>
 
 <!-- Insert all Software links in this section -->
-          <h3>
+          <!--h3>
             Usefull auxiliary Windows software:
           </h3>
           <p>
             <a href="https://raylin.wordpress.com/downloads/md5-sha-1-checksum-utility/" target="_blank">Checksum utility</a><br>
             <a href="https://www.7-zip.org/" target="_blank">7-zip</a>
-          </p>
+          </p-->
           <h3>
-            Necessary files:
+            Usefull links:
           </h3>
           <p>
-            Link 1: <a href="../../wallet.html" target="_blank">Download latest Wallet</a><br>
-            Link 2: <a href="https://bootstrap.0x03.services/veruscoin/VRSC.html" target="_blank">Download Verus Bootstrap</a>
+            Link 1: <a href="../../wallet.html" target="_blank">Download latest Wallet</a> (not required for this procedure)<br>
+            Link 2: <a href="https://explorer.vrsc.0x03.services/api/getblockcount" target="_blank">Show current blockheight</a>
           </p>
 
 <!-- insert formatted procedure text in this section -->
           <h4>Procedure:</h4>
           <pre>
-            REPLACE WITH PROCEDURE.
+In case your wallet is not synchronized with the blockchain and restarting Agama doesn't connect to any peers:
+
+Compare your blockheight with the one Link 2 above is showing to make sure you are
+not synchronized anymore. If the blockheight of the link above is significantly higher (more than 10) than
+the blockheight your wallet is showing, follow the rest of the procedure.
+If the numbers are equal or close, your wallet is synchronized and the procedure below will not solve any problems.
+
+Close your wallet.
+Go to the appropriate location for your OS:
+Windows:    %AppData%\Komodo\VRSC
+Linux:      ~/.Komodo/VRSC
+MacOS:      ~/Library/Application Support/Komodo/VRSC
+Add the following list to the bottom of your `VRSC.conf`, just below `rpcallowip=127.0.0.1`:
+  addnode=95.216.252.182
+  addnode=104.18.42.17
+Save and exit the file.
+
+After you added those 2 nodes, remove every **file** that is directly in VRSC folder, none from the subfolders
+(or at least move to a different location) except `wallet.dat` and `vrsc.conf`.
+Make sure you don't remove any folders, or you'll have to use the bootstrap.
+
+Then start your wallet as you're used to.
           </pre>
 <!-- Insert closing words in this section -->
           <p>
-            REPLACE WITH CONCLUSIVE TEXT.
+            Submitted by @Oink & @Thoskk
           </p>
         </div>
       </section>
