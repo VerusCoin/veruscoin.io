@@ -26,13 +26,13 @@
         "url": "https://github.com/BlackrockDigital/startbootstrap-landing-page.git"
     },
     "dependencies": {
-        "bootstrap": "4.1.1",
+        "bootstrap": "^4.3.1",
         "font-awesome": "4.7.0",
         "jquery": "^3.4.1",
         "simple-line-icons": "^2.4.1"
     },
     "devDependencies": {
-        "browser-sync": "^2.26.5",
+        "browser-sync": "^2.26.7",
         "gulp": "^3.9.1",
         "gulp-clean-css": "3.9.4",
         "gulp-header": "2.0.5",
