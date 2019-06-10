@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
 
-    <title>VerusCoin | How-To | install/update the latest version of Agama for Verus, make a backup of your wallet and install the bootstrap</title>
+    <title>VerusCoin | How-To | Shielding Verus Coin via the CLI</title>
 
     <link rel="shortcut icon" href="../../verus-favicon.png">
 
@@ -95,7 +95,16 @@
           <h2 class="mb-5">Shielding Verus Coin via the CLI.</h2>
 
 <!-- Additional remarks -->
-          <p>Read it completely before use.</p>
+<p>Read it completely before use.</p>
+<p>
+  General remarks on CLI wallet:<br>
+  <ul style="list-style-type:disc;">
+    <li>On Windows command line enter the commands as shown without the surrounding quotation marks</li>
+    <li>In Linux shell preceed the commands without surrounding quotation marks with <kbd>./<kbd></li>
+    <li>In MacOS shell preceed the commands without surrounding quotation marks with <kbd>./</kbd></li>
+  </ul>
+  for example the windows version <kbd>verus listtransactions</kbd> transforms in Linux or MacOS to <kbd>./verus listtransactions</kbd>.
+</p>
 
 <!-- Insert Vital information in this section -->
           <!--pre>
@@ -127,28 +136,28 @@ Windows 10: `%AppData%\Roaming\Komodo\VRSC\`
 You must first "shield coins" (send from a transparent Raddr to a shielded zaddr) to be able to use them in staking, when they first unlock.
 This is part of the Zcash protocol itself. The commands below assume you are in the Verus source code directory
 
-cd src/
-./fiat/verus z_shieldcoinbase
+  `verus z_shieldcoinbase`
 
 You can either use an existing zaddr or use a new zaddr. To make a new zaddr:
 
-./fiat/verus z_getnewaddress
+  `verus z_getnewaddress`
 
 Use the address the above command outputs in the z_shieldcoinbase command
 
 To shield all coinbase in your wallet, you can use "*" (quotes are important) and zaddr that is getting the funds:
 
-./fiat/verus z_shieldcoinbase "*" zcdZ7Ja5d6Nse9wbaQoMVRcJW2pJScWwQ9Kv2ohX7UPakohLpK3BwTi1ksxiEXXj8wxtuK4rq7MDeUsNFxtrFjcApwyoXXX
+  `verus z_shieldcoinbase "*" <Your Z_addr here>`
 
 To just shield a single address, specify that as the first argument:
 
-./fiat/verus z_shieldcoinbase RUWC2P9f39a4x4p4tDeN5B6VbhRiNPSbzz zcdZ7Ja5d6Nse9wbaQoMVRcJW2pJScWwQ9Kv2ohX7UPakohLpK3BwTi1ksxiEXXj8wxtuK4rq7MDeUsNFxtrFjcApwyoXXX
+  `verus z_shieldcoinbase <Your T_addr here> <Your Z_addr here>`
 
 Once the funds have moved to the zaddr and are confirmed, you can freely send them to any taddr, and they will be eligble for staking.
 
 To send from a certain zaddr to a transparent address, use z_sendmany. The following command sends 10 Verus to a given transparent address.
+TADDR=Ryouraddresss
 
-TADDR=Ryouraddresss ./fiat/verus z_sendmany zcZpfuzzJqmNJ3fUJekvbnyuxuJe9eAURAHrMCvN2Nr7VuWjakb1LEw6j2etPcCnr45BRot7MaMbipuS5da162BfuUkFGxx "[{"amount":10,"address":"$TADDR"}]"
+  `verus z_sendmany zcZpfuzzJqmNJ3fUJekvbnyuxuJe9eAURAHrMCvN2Nr7VuWjakb1LEw6j2etPcCnr45BRot7MaMbipuS5da162BfuUkFGxx "[{"amount":10,"address":"$TADDR"}]"`
           </pre>
 <!-- Insert closing words in this section -->
           <p>

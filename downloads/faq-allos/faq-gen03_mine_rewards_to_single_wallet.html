@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
 
-    <title>VerusCoin | How-To | install/update the latest version of Agama for Verus, make a backup of your wallet and install the bootstrap</title>
+    <title>VerusCoin | FAQ | direct all my mined rewards to a single Verus wallet</title>
 
     <link rel="shortcut icon" href="../../verus-favicon.png">
 
@@ -96,6 +96,15 @@
 
 <!-- Additional remarks -->
           <p>Read it completely before use.</p>
+          <p>
+            General remarks on CLI wallet:<br>
+            <ul style="list-style-type:disc;">
+              <li>On Windows command line enter the commands as shown without the surrounding quotation marks</li>
+              <li>In Linux shell preceed the commands without surrounding quotation marks with <kbd>./<kbd></li>
+              <li>In MacOS shell preceed the commands without surrounding quotation marks with <kbd>./</kbd></li>
+            </ul>
+            for example the windows version <kbd>verus listtransactions</kbd> transforms in Linux or MacOS to <kbd>./verus listtransactions</kbd>.
+          </p>
 
 <!-- Insert Vital information in this section -->
           <!--pre>
@@ -142,15 +151,15 @@ Step 3 - Set your PubKey
 IN VERUS-CLI
 Step 1 - First get your wallet address you want to mine to:
          You can find an address if you already have previous transactions, or you can create a new one.  To find an address from a previous
-         transaction, use the command line verus listtransactions and copy the address found after "address".
-         To generate a new wallet address, use the command line verus "getnewaddress" and a new address will be created.
+         transaction, use the command line 'verus listtransactions' and copy the address found after "address".
+         To generate a new wallet address, use the command line 'verus "getnewaddress"' and a new address will be created.
 
-Step 2 - Next, using your new address, enter the command with verus-cli verus validateaddress. From the output find the long string
+Step 2 - Next, using your new address, enter the command with verus-cli 'verus validateaddress'. From the output find the long string
          after "pubkey", copy without the quotation marks.
 
 Step 3 - Set your PubKey
          Last, use this pubkey when starting your daemon by adding the following line to the end of your command, just before
-         the "&" sign: -pubkey=THELONGSTRINGCOPIED
+         the "&" sign: '-pubkey=THELONGSTRINGCOPIED'
 
 Your rewards will now be mined to that address.  It would be a good idea to keep notes and associate the wallet address with the pubkey...
 Also to double check that you did validate the correct pubkey for the wallet address, making sure you made no errors.

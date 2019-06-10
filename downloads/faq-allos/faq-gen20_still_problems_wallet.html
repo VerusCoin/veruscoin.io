@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
 
-    <title>VerusCoin | How-To | install/update the latest version of Agama for Verus, make a backup of your wallet and install the bootstrap</title>
+    <title>VerusCoin | FAQ | Problems with wallet</title>
 
     <link rel="shortcut icon" href="../../verus-favicon.png">
 
@@ -94,8 +94,17 @@
 <!-- Insert title of FAQ - How-to in this section -->
           <h2 class="mb-5">I followed the procedure in previous FAQ and am still having problems with my wallet.</h2>
 
-<!-- Additional remarks -->
-          <p>Read it completely and carefully before use.</p>
+          <!-- Additional remarks -->
+                    <p>Read it completely before use.</p>
+                    <p>
+                      General remarks on CLI wallet:<br>
+                      <ul style="list-style-type:disc;">
+                        <li>On Windows command line enter the commands as shown without the surrounding quotation marks</li>
+                        <li>In Linux shell preceed the commands without surrounding quotation marks with <kbd>./<kbd></li>
+                        <li>In MacOS shell preceed the commands without surrounding quotation marks with <kbd>./</kbd></li>
+                      </ul>
+                      for example the windows version <kbd>verus listtransactions</kbd> transforms in Linux or MacOS to <kbd>./verus listtransactions</kbd>.
+                    </p>
 
 <!-- Insert Vital information in this section -->
           <pre>
@@ -134,10 +143,9 @@ follow the steps below.
   exportdir=/home/<username>/
 
   (or on windows
-  exportdir=c:\Users<username>\Desktop\
+  exportdir=c:\Users\<username>\Desktop\
 
-3. Save the file and stop verusd for Agama just exit and wait for it to close completely. For the linux cli run ./verus stop, or for
-   the windows cli run verus.bat stop .
+3. Save the file and stop verusd for Agama just exit and wait for it to close completely. For the cli run `verus stop`.
 
 4. Once your wallet is finished closing make a backup of your wallet.dat file somewhere safe. wallet.dat is located in the same directory
    as your configuration file (see above). To make the backup just copy it to another directory, make sure to leave the original there
@@ -149,10 +157,8 @@ follow the steps below.
   (Agama)
     Go to settings, scroll to the bottom and click CLI, select VRSC in that section, then below type z_exportwallet mywalletexport and
     click the button below to run it.
-  (linux CLI)
-    run ./verus z_exportwallet mywalletexport
-  (win CLI)
-    run verus.bat z_exportwallet mywalletexport
+  (CLI)
+    `verus z_exportwallet mywalletexport`
 
 The exported wallet should be a file called mywalletexport in the location you set for exportdir in VRSC.conf. Keep this file secure,
 it has your plaintext private keys. Verify that the file is there and isn't empty.
@@ -172,12 +178,10 @@ it has your plaintext private keys. Verify that the file is there and isn't empt
     something like /home/john/mywalletexport .
   (Agama)
     Go to settings, scroll to the bottom and click CLI, select VRSC in that section, then below type
-      z_importwallet <PATHTOWALLETEXPORT>
+      `z_importwallet <PATHTOWALLETEXPORT>`
     and click the button below to run it.
-  (linux CLI)
-    Run ./verus z_importwallet <PATHTOWALLETEXPORT>
-  (win CLI)
-    Run verus.bat z_importwallet <PATHTOWALLETEXPORT>
+  (CLI)
+    Run `verus z_importwallet <PATHTOWALLETEXPORT>`
 
 Depending on the number of addresses in your wallet and how far along you are on re-syncing, this may take several minutes to complete.
 Your balances will adjust as the chain syncs, as it only knows about the transactions that have happened in the blocks it has received

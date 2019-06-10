@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
 
-    <title>VerusCoin | How-To | install/update the latest version of Agama for Verus, make a backup of your wallet and install the bootstrap</title>
+    <title>VerusCoin | FAQ | How does staking work</title>
 
     <link rel="shortcut icon" href="../../verus-favicon.png">
 
@@ -94,8 +94,17 @@
 <!-- Insert title of FAQ - How-to in this section -->
           <h2 class="mb-5">How does staking work?</h2>
 
-<!-- Additional remarks -->
-          <!--p>Read it completely before use.</p-->
+          <!-- Additional remarks -->
+                    <p>Read it completely before use.</p>
+                    <p>
+                      General remarks on CLI wallet:<br>
+                      <ul style="list-style-type:disc;">
+                        <li>On Windows command line enter the commands as shown without the surrounding quotation marks</li>
+                        <li>In Linux shell preceed the commands without surrounding quotation marks with <kbd>./<kbd></li>
+                        <li>In MacOS shell preceed the commands without surrounding quotation marks with <kbd>./</kbd></li>
+                      </ul>
+                      for example the windows version <kbd>verus listtransactions</kbd> transforms in Linux or MacOS to <kbd>./verus listtransactions</kbd>.
+                    </p>
 
 <!-- Insert Vital information in this section -->
           <!--pre>
@@ -149,9 +158,9 @@ Regarding time locked coins:
   your public / transparent address(es) and you’ll automatically start staking.
 
 Check if you are staking in CLI:
-    ./verus getgenerate
+    `verus getgenerate`
 Enable staking by running the following:
-    ./verus setgenerate true 0
+    `verus setgenerate true 0`
 
 Check if you are staking in GUI:
     In Agama go to your 'Transactions' page and click on grey 'Mining +' button. Two Orange buttons will appear. If the
