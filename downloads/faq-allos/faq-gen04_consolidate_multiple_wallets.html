@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
 
-    <title>VerusCoin | How-To | install/update the latest version of Agama for Verus, make a backup of your wallet and install the bootstrap</title>
+    <title>VerusCoin | FAQ | Consolidate multiple wallet.dat files in one</title>
 
     <link rel="shortcut icon" href="../../verus-favicon.png">
 
@@ -94,8 +94,17 @@
 <!-- Insert title of FAQ - How-to in this section -->
           <h2 class="mb-5">How to consolidate multiple wallet.dat files in one?</h2>
 
-<!-- Additional remarks -->
-          <p>Read it completely before use.</p>
+          <!-- Additional remarks -->
+                    <p>Read it completely before use.</p>
+                    <p>
+                      General remarks on CLI wallet:<br>
+                      <ul style="list-style-type:disc;">
+                        <li>On Windows command line enter the commands as shown without the surrounding quotation marks</li>
+                        <li>In Linux shell preceed the commands without surrounding quotation marks with <kbd>./<kbd></li>
+                        <li>In MacOS shell preceed the commands without surrounding quotation marks with <kbd>./</kbd></li>
+                      </ul>
+                      for example the windows version <kbd>verus listtransactions</kbd> transforms in Linux or MacOS to <kbd>./verus listtransactions</kbd>.
+                    </p>
 
 <!-- Insert Vital information in this section -->
           <pre>
@@ -126,9 +135,9 @@ Windows 10: `%AppData%\Komodo\VRSC\`
           <pre>
 1) Edit the VRSC.conf file on each instance you have, adding the following line: exportdir=/LOCAL_PATH/ (ie /home/user/)
 2) Restart verusd
-3) Issue the following command (on the verus-cli): z_exportwallet FILENAME (ie z_exportwallet export_instance01)
+3) Issue the following command (on the verus-cli): `verus z_exportwallet FILENAME' (ie z_exportwallet export_instance01)
 4) Copy the generated file to the machine who host your main wallet
-5) Issue the following command (on the "main" verus-cli): z_importwallet /LOCAL_PATH/FILENAME (ie /home/user/export_instance01)
+5) Issue the following command (on the "main" verus-cli): 'verus z_importwallet /LOCAL_PATH/FILENAME' (ie /home/user/export_instance01)
           </pre>
 <!-- Insert closing words in this section -->
           <p>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
 
-    <title>VerusCoin | How-To | install/update the latest version of Agama for Verus, make a backup of your wallet and install the bootstrap</title>
+    <title>VerusCoin | FAQ | Usefull Verus CLI commands</title>
 
     <link rel="shortcut icon" href="../../verus-favicon.png">
 
@@ -94,8 +94,17 @@
 <!-- Insert title of FAQ - How-to in this section -->
           <h2 class="mb-5">Usefull Verus CLI commands.</h2>
 
-<!-- Additional remarks -->
-          <!--p>Read it completely before use.</p>
+          <!-- Additional remarks -->
+                    <p>Read it completely before use.</p>
+                    <p>
+                      General remarks on CLI wallet:<br>
+                      <ul style="list-style-type:disc;">
+                        <li>On Windows command line enter the commands as shown without the surrounding quotation marks</li>
+                        <li>In Linux shell preceed the commands without surrounding quotation marks with <kbd>./<kbd></li>
+                        <li>In MacOS shell preceed the commands without surrounding quotation marks with <kbd>./</kbd></li>
+                      </ul>
+                      for example the windows version <kbd>verus listtransactions</kbd> transforms in Linux or MacOS to <kbd>./verus listtransactions</kbd>.
+                    </p>
 
 <!-- Insert Vital information in this section -->
           <!--pre>
@@ -125,24 +134,24 @@ Windows 10: `%AppData%\Komodo\VRSC\`
           <h4>Handy verus-cli commands:</h4>
           <pre>
 Importing a VRSC private key into your wallet:
-    ./verus importprivkey "PRIVATE_KEY"
+    'verus importprivkey "PRIVATE_KEY"'
 Getting your current VRSC balance:
-    ./verus getbalance
+    'verus getbalance'
 or for somewhat more information:
-    ./verus z_gettotalbalance
+    'verus z_gettotalbalance'
 Sending VRSC coins from your verus wallet to and another VRSC address (t-address in this case, seperate command for z-addresses I think):
-    ./verus sendtoaddress "VRSC_address" AMOUNT "Some comments here"
+    'verus sendtoaddress "VRSC_address" AMOUNT "Some comments here"'
 Listing the latest VRSC transactions:
-    ./verus listtransactions
+    'verus listtransactions'
 Send VRSC from PUBLIC address:
-    ./verus
+    'verus'
 Shield reward coins from all public addresses:
-    ./verus z_shieldcoinbase "*" "Z-ADDRESS"
+    'verus z_shieldcoinbase "*" "Z-ADDRESS"''
 Transfer X VRSX from (private) z-address to (public) R-address:
-    ./verus z_sendmany "Z-ADDRESS" [{\"amount\":X,\"address\":\"R-ADDRESS\"}]
+    'verus z_sendmany "Z-ADDRESS" [{\"amount\":X,\"address\":\"R-ADDRESS\"}]'
 
 Disclaimer: Always read up before using a verus-cli command, more info on each command can be found using the following:
-    ./verus help
+    'verus help'
           </pre>
 <!-- Insert closing words in this section -->
           <p>

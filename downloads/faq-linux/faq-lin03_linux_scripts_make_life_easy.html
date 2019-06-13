@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
 
-    <title>VerusCoin | How-To | install/update the latest version of Agama for Verus, make a backup of your wallet and install the bootstrap</title>
+    <title>VerusCoin | FAQ | Linux Bash Scripts To Make Mining Life Easier</title>
 
     <link rel="shortcut icon" href="../../verus-favicon.png">
 
@@ -101,6 +101,7 @@
           <h4>Important General Information</h4>
           <pre>
 'Agama Wallet location` on Linux: `~/.Komodo/VRSC`
+for wallet version prior to 0.5.7, replace <strong>verusd</strong> with <strong>komodod</strong>.
           </pre>
 
 <!-- Insert all Software links in this section -->
@@ -127,7 +128,7 @@
 
 #!/bin/bash
 
-if pgrep -x "komodod" > /dev/null
+if pgrep -x "verusd" > /dev/null
 then
     TRUE="1"
 else
@@ -159,7 +160,9 @@ fi
             For this script I recommend setting up a new Protonmail account with no association to any other service or your name, 2FA secure it.
 
 echo "Attached Backup" | mail -s "Merry Backup" -A /home/user/.komodo/VRSC/wallet.dat -a "From: user@yourfullyqualifieddomain.tld" you@youremail.tld
+
 Again, these scripts are a little rudementary but they do work! If you're curious my crontab, I'll post it next...to set your cron jobs use the command crontab -e
+
 MY CRONTAB
 In the following, the */5 is every 5 min, the 0 is on the hour every hour, the 0 12 is every day at 12 PM.
 # m h  dom mon dow   command
