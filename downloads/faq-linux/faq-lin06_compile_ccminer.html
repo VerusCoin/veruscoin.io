@@ -130,12 +130,13 @@ Replace in step 2 ARM with the branchname above you want to use.
           <pre>
 1) sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential
 2) git clone --single-branch -b ARM https://github.com/monkins1010/ccminer.git
-3) chmod +x build.sh
-4) chmod +x configure.sh
-5) chmod +x autogen.sh
-6) ./build.sh
+3) cd ccminer
+4) chmod +x build.sh
+5) chmod +x configure.sh
+6) chmod +x autogen.sh
+7) ./build.sh
 And finally starting the miner (Change pool, address & workername to your own liking):
-7) ./ccminer -a verus -o stratum+tcp://stratum.veruspool.xyz:9999 -u RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ.donator -p x
+8) ./ccminer -a verus -o stratum+tcp://stratum.veruspool.xyz:9999 -u RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ.donator -p x
           </pre>
 <!-- Insert closing words in this section -->
           <p>
