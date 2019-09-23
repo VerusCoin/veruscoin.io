@@ -163,7 +163,7 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
     <section class="features-icons bg-light text-center" style="padding-top: 4rem;">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-6">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
                 <i class="fa fa-question m-auto fa-5x text-primary"></i>
@@ -176,13 +176,16 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
                 Find detailed solutions to common problems here.</p>
             </div>
           </div>
-          <!--div class="col-lg-3">
+          <div class="col-lg-6">
             <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
               <div class="features-icons-icon d-flex">
-                <i class="fa fa-info m-auto text-primary"></i>
+                <i class="fa fa-play m-auto text-primary"></i>
               </div>
-              <h3>FAQ OS independant</h3>
-              <p class="lead mb-0">Frequently Asked questions that apply to all Operating Systems</p>
+              <h3>Instruction videos</h3>
+              <p class="lead mb-0">
+                <a href="#" data-toggle="modal" data-target="#Video">
+                  Informational videos
+                </a> about how to get thing done.</p>
             </div>
           </div-->
           <!--div class="col-lg-3">
@@ -269,6 +272,30 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
         </div>
       </div>
     </section>
+
+    <div class="modal fade" id="Video" tabindex="-1" role="dialog" aria-labelledby="VideoLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="How-ToLabel">Instruction videos</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <a href="https://youtu.be/gCibcAAYU4w" target="_blank">Installing and starting the Verus Agama wallet</a><br>
+              <a href="https://youtu.be/sQNEu60p7Ag" target="_blank">Setup the Verus Agama Wallet and start staking</a><br>
+              <a href="https://youtu.be/z73F0GwkTR8" target="_blank">How to backup the Verus Agama Wallet</a><br>
+              <a href="" target="_blank"></a><br>
+            </p>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
       <div class="modal fade" id="How-To" tabindex="-1" role="dialog" aria-labelledby="How-ToLabel" aria-hidden="true">
       	<div class="modal-dialog" role="document">
