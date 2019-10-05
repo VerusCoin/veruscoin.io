@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <title>VerusCoin | FAQ | Alternate Data Location</title>
+
+    <link rel="shortcut icon" href="../../verus-favicon.png">
+
+	<link rel="image_src" href="https://veruscoin.io/img/veruslogolarge.png" />
+
+	<meta property="og:image" content="https://veruscoin.io/img/veruslogolarge.png" />
+	<meta property="og:url" content="https://veruscoin.io" />
+	<meta property="og:title" content="VerusCoin" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Community driven open source CPU mineable cryptocurrency with 50/50 Proof-of-Work/Proof-of-Stake, zk-SNARK zero-knowledge proof privacy." />
+
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link href="../../css/landing-page.min.css" rel="stylesheet">
+    <link href="../../css/master.css" rel="stylesheet">
+    <link href="../../css/overrides.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Scroll to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- End -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="/"><img class="mr-0" src="../../img/VRSClogo.svg" style="height: 70px;"></a>
+          <div id="mobile-button">
+            <span id="line-top" class="mobile-button-line"></span>
+            <span id="line-mid" class="mobile-button-line"></span>
+            <span class="mobile-button-line"></span>
+          </div>
+          <script>
+              $('#mobile-button').click( function() {
+                  $("#main-menu").toggleClass("mobile-menu-show");
+          });
+          </script>
+            <ul id="main-menu" class="list-inline mb-0 mr-4 pr-4">
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="../../index.html">Home</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="../../wallet.html">Verus wallet</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="../../getVRSC.html">Get VRSC</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="https://explorer.veruscoin.io" target="_blank">Explorer</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="https://medium.com/VerusCoin" target="_blank">Blog</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="../../service.html">FAQ & How-To</a>
+              </li>
+            </ul>
+      </div>
+    </nav>
+
+    <header class="masthead text-white text-center" style="padding-top: 2rem;padding-bottom: 2rem;">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 mx-auto">
+            <!--<h1 class="mb-5">Verus</h1>-->
+          </div>
+          <div class="col-lg-4 mx-auto">
+            <img style="width:100%;" src="../../img/verustitle.svg" />
+            <span class="tagline-new">Truth and Privacy for All</span>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="maincontent" id="FAQ-AllOS">
+      <section id="Bootstrap" class="bootstrap">
+        <div class="container">
+
+<!-- Insert title of FAQ - How-to in this section -->
+          <h2 class="mb-5">Agama - Alternate Data Location.</h2>
+
+<!-- Additional remarks -->
+          <p>Read it completely before use.</p>
+
+<!-- Insert Vital information in this section -->
+          <pre>
+Standard 'Agama data directory` on different OS:
+Linux GUI: `~/.Komodo`
+Mac OS: `/Users/<YOURUSERNAME>/Library/Application Support/Komodo`
+Windows 10: `%AppData%\Komodo`
+          </pre>
+
+<!-- Insert all Software links in this section -->
+          <!--h3>
+            Usefull auxiliary Windows software:
+          </h3>
+          <p>
+            <a href="https://raylin.wordpress.com/downloads/md5-sha-1-checksum-utility/" target="_blank">Checksum utility</a><br>
+            <a href="https://www.7-zip.org/" target="_blank">7-zip</a>
+          </p>
+          <h3>
+            Necessary files:
+          </h3>
+          <p>
+            Link 1: <a href="../../wallet.html" target="_blank">Download latest Wallet</a><br>
+            Link 2: <a href="https://bootstrap.0x03.services/veruscoin/VRSC.html" target="_blank">Download Verus Bootstrap</a>
+          </p-->
+
+<!-- insert formatted procedure text in this section -->
+          <h4>Procedure:</h4>
+          <pre>
+To choose another location for your blockchain and wallet files in Verus Agama, you will need to tell Agama which existing
+location to use.
+
+If this is a completely fresh install of Agama and want to start with a custom location follow this procedure:
+1)  Create an empty directory anywhere on a drive with at least 30GB free space for just Verus. If you plan on using other Blockchains
+    in native mode, reserve more space accordingly.
+2)  Start Agama and click `Quick access` on the welcome screen and select `settings`.
+3)  Go to `App Config (config.json)` and scroll down to `Komodo data directory`.
+4)  Enter the full path to your new directory that you created in step 1.
+5)  scroll down and click on `Save app config`, close the windows and exit Agama.
+6)  Start Agama to start using the new location.
+
+If you have an existing installation of Verus Agama and you wish to move your standard blockchain and wallet data folders
+follow this procedure:
+1)  Create an empty directory anywhere on a drive with at least 30GB free space for just Verus. If you plan on using other Blockchains
+    in native mode, reserve more space accordingly.
+
+Before proceeding with step 2, make sure you have a reliable backup of your `wallet.dat` and/or the WIFs of your addresses.
+
+2)  Make sure Agama is closed and move the contents of the standard `Agama data directory` (location is mentioned above the procedures
+    on this page) to the location you created in step 1.
+3)  Start Agama and click `Quick access` on the welcome screen and select `settings`.
+4)  Go to `App Config (config.json)` and scroll down to `Komodo data directory`.
+5)  Enter the full path to your new directory that you created in step 1.
+6)  scroll down and click on `Save app config`, close the windows and exit Agama.
+7)  Start Verus Agama as normal.
+
+PS1. In future any reference to `Agama Wallet Location` will be the directory you created in step 1.
+PS2. The data location will be changed for ALL native chains you have now or use later.
+
+          </pre>
+<!-- Insert closing words in this section -->
+          <p>
+            Created by @Oink, being inspired by @HobowithanOatbun.
+          </p>
+        </div>
+      </section>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <p class="text-muted small mb-4 mb-lg-0">&copy; 2019 The Verus Project. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="https://twitter.com/veruscoin" title="Official Verus Twitter Feed">
+                  <img style="height: 32px; position: relative; top: -7px" src="../../img/twitter.svg">
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                  <a href="https://discord.gg/VRKMP2S" title="Verus Discord">
+                      <img style="height: 32px; position: relative; top: -7px" src="../../img/discord.svg">
+                  </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://medium.com/@veruscoin" title="Official Verus Medium">
+                  <img style="height: 32px; position: relative; top: -7px" src="../../img/medium.svg">
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://reddit.com/r/veruscoin" title="Official Verus Reddit Feed">
+                  <img style="height: 32px; position: relative; top: -7px" src="../../img/reddit.svg">
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://bitcointalk.org/index.php?topic=4070404.0" title="Verus thread on Bitcointalk">
+                  <img style="height: 32px; position: relative; top: -7px" src="../../img/bitcointalk.svg">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/veruscoin/veruscoin" title="Verus Github repository">
+                  <img style="height: 32px; position: relative; top: -7px" src="../../img/github.svg">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>
