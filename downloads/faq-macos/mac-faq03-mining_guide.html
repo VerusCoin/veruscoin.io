@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <title>VerusCoin | FAQ | Start Mining on MacOS.</title>
+
+    <link rel="shortcut icon" href="../../verus-favicon.png">
+
+	<link rel="image_src" href="https://veruscoin.io/img/veruslogolarge.png" />
+
+	<meta property="og:image" content="https://veruscoin.io/img/veruslogolarge.png" />
+	<meta property="og:url" content="https://veruscoin.io" />
+	<meta property="og:title" content="VerusCoin" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Community driven open source CPU mineable cryptocurrency with 50/50 Proof-of-Work/Proof-of-Stake, zk-SNARK zero-knowledge proof privacy." />
+
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link href="../../css/landing-page.min.css" rel="stylesheet">
+    <link href="../../css/master.css" rel="stylesheet">
+    <link href="../../css/overrides.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Scroll to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- End -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="/"><img class="mr-0" src="../../img/VRSClogo.svg" style="height: 70px;"></a>
+          <div id="mobile-button">
+            <span id="line-top" class="mobile-button-line"></span>
+            <span id="line-mid" class="mobile-button-line"></span>
+            <span class="mobile-button-line"></span>
+          </div>
+          <script>
+              $('#mobile-button').click( function() {
+                  $("#main-menu").toggleClass("mobile-menu-show");
+          });
+          </script>
+            <ul id="main-menu" class="list-inline mb-0 mr-4 pr-4">
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="../../index.html">Home</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="../../wallet.html">Verus wallet</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="../../getVRSC.html">Get VRSC</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="https://explorer.veruscoin.io" target="_blank">Explorer</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="https://medium.com/VerusCoin" target="_blank">Blog</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="../../service.html">FAQ & How-To</a>
+              </li>
+            </ul>
+      </div>
+    </nav>
+
+    <header class="masthead text-white text-center" style="padding-top: 2rem;padding-bottom: 2rem;">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 mx-auto">
+            <!--<h1 class="mb-5">Verus</h1>-->
+          </div>
+          <div class="col-lg-4 mx-auto">
+            <img style="width:100%;" src="../../img/verustitle.svg" />
+            <span class="tagline-new">Truth and Privacy for All</span>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="maincontent" id="FAQ-MacOS">
+      <section id="Bootstrap" class="bootstrap">
+        <div class="container">
+
+<!-- Insert title of FAQ - How-to in this section -->
+          <h2 class="mb-5">Start mining on MacOS.</h2>
+
+<!-- Additional remarks -->
+          <p>Read it completely before use.</p>
+
+<!-- Insert Vital information in this section -->
+          <pre>
+'Agama Wallet location` on Mac OS: `/Users/<YOURUSERNAME>/Library/Application Support/Komodo/VRSC`
+          </pre>
+
+<!-- Insert all Software links in this section -->
+          <h4>
+            Software needed to mine
+          </h4>
+          <p>
+            Prerequisite: <a href="https://veruscoin.io/wallet.html" target="_blank">VerusCoin wallets</a><br>
+            Needed: <a href="https://veruscoin.io/getVRSC.html#download" target="_blank">VerusCoin miners</a>
+          </p>
+          <h4>
+            Prerequisites:
+          </h4>
+          <p>
+            To start mining with your Mac, you will need to have an address to mine to. Possibilities are:
+            <ul>
+              <li>An exchange address (<b>NOT</b> recommended. This is asking for trouble.)</li>
+              <li>An address from a web-wallet</li>
+              <li>An address from a mobile wallet</li>
+              <li>An address from a Desktop Lite wallet</li>
+              <li>An address from a desktop Native wallet</li>
+            </ul>
+          </p>
+
+<!-- insert formatted procedure text in this section -->
+          <h4>Procedure:</h4>
+          <pre>
+To start mining on your Mac, you should already have a wallet and and access to an address to mine to. Now to start mining we
+will need to download the miner first:
+  1) Go to the `Veruscoin miners` link above and download `CLI nheqminer` for MacOS.
+  2) Open the download folder in finder.
+  3) doubleclick `nheqminer-MacOS-v0.7.2.tar.gz` to unpack it in your download folder.
+  4) Open the `nheqminer` folder that appeared in your download folder
+
+Now we need to configure things so the miner connects to a mining pool (listed on the download page, below the miner download)
+and mines to your address. In the instructions below I will use the VerusCoin community pool and the address for the Veruscoin
+foundation. make sure to use your own address and if desired the details of a different pool:
+  5) click `start.sh` and open with `TextEdit.app`
+  6) On the 2nd line, change `PoolHost=` into `Poolhost=pool.veruscoin.io`
+  7) On the 3rd line, change `Port=` into 'Port=9999'
+  8) On the 4th line, change 'PublicVerusCoinAddress=' into `PublicVerusCoinAddress=RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ`
+        (make sure you use your own address!!!!)
+  9) On the 5th line, change `WorkerName=` into `WorkerName=MacOS` (or any name you want to identify your system)
+
+In the next step we will set how many processor threads the miner will use. Make sure to use less threads than your
+processor has virtual cores. If you allow the miner to use all cores, your system will become sluggish at times, or
+it may even become completely unresponsive:
+ 10) On the 6th line, change `Threads=` into `Threads=7` (fill in the amount of virtual cores you want to use)
+ 11) Save and exit the file.
+
+We have all the settings ready to go, but the file we just edited is not executable right now.
+ 12) Click `Start.sh` and click `copy "Start.sh"`
+ 13) Click in an empty space in you folder and click `Patse items`, which will result in a new `start copy.sh` file.
+ 14) rename `start copy.sh` to `start.command`
+Now we have an executable file that will run when you doubleclick.
+ 15) Doubleclick `start.command` and your machine will start mining.
+          </pre>
+<!-- Insert closing words in this section -->
+          <p>
+            Created by @Oink.
+          </p>
+        </div>
+      </section>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <p class="text-muted small mb-4 mb-lg-0">&copy; 2019 The Verus Project. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="https://twitter.com/veruscoin" title="Official Verus Twitter Feed">
+                  <img style="height: 32px; position: relative; top: -7px" src="../../img/twitter.svg">
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                  <a href="https://discord.gg/VRKMP2S" title="Verus Discord">
+                      <img style="height: 32px; position: relative; top: -7px" src="../../img/discord.svg">
+                  </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://medium.com/@veruscoin" title="Official Verus Medium">
+                  <img style="height: 32px; position: relative; top: -7px" src="../../img/medium.svg">
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://reddit.com/r/veruscoin" title="Official Verus Reddit Feed">
+                  <img style="height: 32px; position: relative; top: -7px" src="../../img/reddit.svg">
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://bitcointalk.org/index.php?topic=4070404.0" title="Verus thread on Bitcointalk">
+                  <img style="height: 32px; position: relative; top: -7px" src="../../img/bitcointalk.svg">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/veruscoin/veruscoin" title="Verus Github repository">
+                  <img style="height: 32px; position: relative; top: -7px" src="../../img/github.svg">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>
