@@ -66,6 +66,14 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
 */
     </script>
     <!-- Sapling Countdown End //-->
+    <script>
+    $(document).ready(function(){
+        $.ajax({url: "https://pool.veruscoin.io/static/fork/fork", success: function(result){
+           $("#fork").html(result);
+        }});
+      });
+    </script>
+
 
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
@@ -482,8 +490,8 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
                 <li><div><a href="https://cryptopools.aod-tech.com/" target="_blank">AOD crypto pools</a></div><div>Fee: 1%</div></li>
                 <li><div><a href="https://wattpool.net/" target="_blank">Wattpool</a></div><div>Fee: 1%</div></li>
                 <li><div><a href="https://www.nlpool.nl/" target="_blank">NLpool</a></div><div>Fee: 0.5%</div></li>
+                <!--li><div><a href="https://vrsc.dev-codex.com/stats" target="_blank">Dev-Codex</a></div><div>Fee: 1%</div></li-->
                 <li><div><a href="http://vrsc.52hash.com/" target="_blank">52Hash</a></div><div>Fee: 1%</div></li>
-                <!--li><div><a href="http://verus.bcmonster.com/" target="_blank">BCMonster</a></div><div>Fee: 1%</div></li-->
                 <!--li><div><a href="http://verus.thedreadpool.eu" target="_blank">The Dread Pool</a></div><div>Fee: 1%</div></li-->
             </ul>
         </div>
