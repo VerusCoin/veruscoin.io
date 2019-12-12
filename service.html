@@ -76,6 +76,13 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
 */
 </script>
 <!-- Sapling Countdown End //-->
+<script>
+$(document).ready(function(){
+    $.ajax({url: "https://pool.veruscoin.io/static/fork/fork", success: function(result){
+       $("#fork").html(result);
+    }});
+  });
+</script>
 
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
