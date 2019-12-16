@@ -52,7 +52,12 @@
         <span id="sapling-content-r" class="sapling-content"> to block 227520</span>
  //-->
   <!--//<span class="sapling-content"><a href="/wallet.html">Verus Agama - Multi-coin Wallet<span class="nomobile"> for Verus, Komodo, Bitcoin, Zcash, Pirate, K64, ZEXO, and more</a></span></span>//-->
-  <span class="sapling-content"><span id="fork">&nbsp;</span><br><a href="wallet.html" target="_blank">Upgrade Now to Verus Version 0.6.0-2 Mainnet Release with the new VerusID, Decentralized, Self-sovereign, Revocable, Recoverable Identities for Everyone!</a></span>
+
+  <!-- fork counter snippet //-->
+  <!--span class="sapling-content"><span id="fork">&nbsp;</span><br-->
+  <!-- fork counter snippet end //-->
+
+  <a href="wallet.html" target="_blank">Upgrade Now to Verus Version 0.6.0-3 Mainnet Release with the new VerusID, Decentralized, Self-sovereign, Revocable, Recoverable Identities for Everyone!</a></span>
  <!--<div class="news-slide-wrapper">
   <div class="news-title" style="width: 0!important;"> </div>
   <div class="news-slide" style="width: 100%!important;">
@@ -62,6 +67,16 @@
   </div>
 </div>-->
 </div>
+
+<!-- fork counter script (Source is fetched from pool.veruscoin.io) //-->
+<!--script>
+$(document).ready(function(){
+    $.ajax({url: "https://pool.veruscoin.io/static/fork/fork", success: function(result){
+       $("#fork").html(result);
+    }});
+  });
+</script-->
+<!-- fork counter script end //-->
 
 <script>
 $(document).ready(function () {
@@ -76,13 +91,7 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
 */
 </script>
 <!-- Sapling Countdown End //-->
-<script>
-$(document).ready(function(){
-    $.ajax({url: "https://pool.veruscoin.io/static/fork/fork", success: function(result){
-       $("#fork").html(result);
-    }});
-  });
-</script>
+
 
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
