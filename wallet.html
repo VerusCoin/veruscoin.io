@@ -52,7 +52,12 @@
         <span id="sapling-content-r" class="sapling-content"> to block 227520</span>
  //-->
   <!--//<span class="sapling-content"><a href="/wallet.html">Verus Agama - Multi-coin Wallet<span class="nomobile"> for Verus, Komodo, Bitcoin, Zcash, Pirate, K64, ZEXO, and more</a></span></span>//-->
-  <span class="sapling-content"><span id="fork">&nbsp;</span><br><a href="wallet.html" target="_blank">Upgrade Now to Verus Version 0.6.0-2 Mainnet Release with the new VerusID, Decentralized, Self-sovereign, Revocable, Recoverable Identities for Everyone!</a></span>
+
+  <!-- fork counter snippet //-->
+  <!--span class="sapling-content"><span id="fork">&nbsp;</span><br-->
+  <!-- fork counter snippet end //-->
+
+  <a href="wallet.html" target="_blank">Upgrade Now to Verus Version 0.6.0-5 Mainnet Release with the new VerusID, Decentralized, Self-sovereign, Revocable, Recoverable Identities for Everyone!</a></span>
  <!--<div class="news-slide-wrapper">
   <div class="news-title" style="width: 0!important;"> </div>
   <div class="news-slide" style="width: 100%!important;">
@@ -62,6 +67,16 @@
   </div>
 </div>-->
 </div>
+
+<!-- fork counter script (Source is fetched from pool.veruscoin.io) //-->
+<!--script>
+$(document).ready(function(){
+    $.ajax({url: "https://pool.veruscoin.io/static/fork/fork", success: function(result){
+       $("#fork").html(result);
+    }});
+  });
+</script-->
+<!-- fork counter script end //-->
 
 <script>
 $(document).ready(function () {
@@ -76,13 +91,7 @@ $('#sapling-time').countdown(nextYear.toDate(), function(event) {
 */
 </script>
 <!-- Sapling Countdown End //-->
-<script>
-$(document).ready(function(){
-    $.ajax({url: "https://pool.veruscoin.io/static/fork/fork", success: function(result){
-       $("#fork").html(result);
-    }});
-  });
-</script>
+
 
     <nav class="navbar navbar-light bg-light static-top">
       <div class="container">
@@ -194,7 +203,7 @@ $(document).ready(function(){
         <div>
           <h3>Wallets</h3>
           <p><strong>System requirements:</strong> 64bit CPU/OS. Windows, Linux (Ubuntu tested), or Mac High Sierra and upwards. 8GB Memory.</p>
-          <p><a href="https://github.com/VerusCoin/Agama/releases/tag/v0.6.0-3" title="VerusCoin Release Notes" target="_blank">v0.6.0-3 Release Notes</a></p>
+          <p><a href="https://github.com/VerusCoin/Agama/releases/tag/v0.6.0-5" title="VerusCoin Release Notes" target="_blank">v0.6.0-5 Release Notes</a></p>
           <p>These are the official codebases and wallets supported by the community, which have the most advanced Verus features.</p>
           <p>Jumpstart your native wallet using this <a href="./downloads/how-to/how-to_bootstrap.html" title="VerusCoin Bootstrap procedure" target="_blank">bootstrap</a> and save hours on synchronizing.</p>
           <!--p><a href="https://www.combatnerd.com/widgets/stakingcoin/VRSC/" title="VerusCoin Staking Profitability Calculator" _target="_blank">Staking Calculator</a></p-->
@@ -205,26 +214,52 @@ $(document).ready(function(){
           <div class="col1 pr-2">
             <p class="text-center"><i class="fa fa-windows fa-5x text-primary"></i></p>
             <p class="text-center">Windows</p>
-            <a href="https://github.com/VerusCoin/Agama/releases/download/v0.6.0-3/Agama-Windows-v0.6.0-3.zip" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Windows Wallet v0.6.0-3" style="width:90%!important">Graphical Wallet v0.6.0-3</a>
-            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/Agama/releases/download/v0.6.0-3/Agama-Windows-v0.6.0-3.zip.sha256">97e1d8bbf7bd90f1dc34479aa40e24498b878b560d7ef38dc43e7ffa8cb0d74d</a></p>
-            <a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-3/Verus-CLI-Windows-v0.6.0-3.zip" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Windows CLI v0.6.0-3" style="width:90%!important">Command Line v0.6.0-3</a>
-            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-3/Verus-CLI-Windows-v0.6.0-3.zip.sha256">2ca4b8bef8ad3e23bb896593be1509cf85619f2a6b87e72f9e59b99b52b63810</a></p>
+            <a href="https://github.com/VerusCoin/Verus/releases/download/v0.0.3-alpha/Verus-Windows-v0.0.3-alpha.zip" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Windows Wallet v0.6.0-5" style="width:90%!important">Verus v0.0.3-alpha</a>
+            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/Verus/releases/download/v0.0.3-alpha/Verus-Windows-v0.0.3-alpha.zip.sha256">0c7f5f56e1d2afa736742172fbcd497a1b940dab69b389364a56acf57c32b321</a></p>
+            <!--a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-5/Verus-CLI-Windows-v0.6.0-5.zip" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Windows CLI v0.6.0-5" style="width:90%!important">Command Line v0.6.0-5</a>
+            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-5/Verus-CLI-Windows-v0.6.0-5.zip.sha256">e8f9b060d37e7028714d8c078705c8d6ceaef51b0d6f4c121cfbe40ab781b16f</a></p-->
           </div>
           <div class="col2 px-2">
             <p class="text-center"><i class="fa fa-linux fa-5x text-primary"></i></p>
             <p class="text-center">Linux</p>
-            <a href="https://github.com/VerusCoin/Agama/releases/download/v0.6.0-3/Agama-Linux-v0.6.0-3.tar.gz" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Linux Wallet v0.6.0-3" style="width:90%!important">Graphical Wallet v0.6.0-3</a>
-            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/Agama/releases/download/v0.6.0-3/Agama-Linux-v0.6.0-3.tar.gz.sha256">e9e221a00ae822156c260a942a035c5432f383684b5426c85a36477a0974b4cf</a></p>
-            <a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-3/Verus-CLI-Linux-v0.6.0-3-amd64.tar.gz" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Linux CLI v0.6.0-3" style="width:90%!important">Command Line v0.6.0-3</a>
-            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-3/Verus-CLI-Linux-v0.6.0-3-amd64.tar.gz.sha256">1246d439115b7578ddd47f8427a93f3ebad9a637d0735ed1db31003a9a3f53be</a></p>
+            <a href="https://github.com/VerusCoin/Verus/releases/download/v0.0.3-alpha/Verus-Linux-v0.0.3-alpha.tar.gz" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Linux Wallet v0.6.0-5" style="width:90%!important">Verus v0.0.3-alpha</a>
+            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/Verus/releases/download/v0.0.3-alpha/Verus-Linux-v0.0.3-alpha.tar.gz.sha256">6faf5edcdf28d02b4552337fac6c58f1f27bb033c5d83ce97e4a05fedc246024</a></p>
+            <!--a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-5/Verus-CLI-Linux-v0.6.0-5-amd64.tar.gz" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Linux CLI v0.6.0-5" style="width:90%!important">Command Line v0.6.0-5</a>
+            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-5/Verus-CLI-Linux-v0.6.0-5-amd64.tar.gz.sha256">27aa9d8d4a89dadf1a87928664eef7dc70ef92624d62596ee6e699b064f17daa</a></p-->
           </div>
           <div class="col3 pl-2">
             <p class="text-center"><i class="fa fa-apple fa-5x text-primary"></i></p>
             <p class="text-center">MacOS</p>
-            <a href="https://github.com/VerusCoin/Agama/releases/download/v0.6.0-3/Agama-MacOS-v0.6.0-3.dmg" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin MacOS Wallet v0.6.0-3" style="width:90%!important">Graphical Wallet v0.6.0-3</a>
-            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/Agama/releases/download/v0.6.0-3/Agama-MacOS-v0.6.0-3.dmg.sha256">524c2b6bbdc581d32fb014ef339401778ac8c71a0ae66aeb1ea4e33a1551b509</a></p>
-            <a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-3/Verus-CLI-MacOS-v0.6.0-3.tar.gz" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin MacOS CLI v0.6.0-3" style="width:90%!important">Command Line v0.6.0-3</a>
-            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-3/Verus-CLI-MacOS-v0.6.0-3.tar.gz.sha256">a82b8cfb4207b6a8e05300bc91c0363dbad0de7e3f5a1a57043b641ba4852b2e</a></p>
+            <a href="https://github.com/VerusCoin/Verus/releases/download/v0.0.3-alpha/Verus-MacOS-v0.0.3-alpha.dmg" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin MacOS Wallet v0.6.0-5" style="width:90%!important">Verus v0.0.3-alpha</a>
+            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/Verus/releases/download/v0.0.3-alpha/Verus-MacOS-v0.0.3-alpha.dmg.sha256">58abda7e8825f810385529f5e0a947e58c6297def309e34f40bb9e9278dc3b30</a></p>
+            <!--a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-5/Verus-CLI-MacOS-v0.6.0-5.tar.gz" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin MacOS CLI v0.6.0-5" style="width:90%!important">Command Line v0.6.0-5</a>
+            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-5/Verus-CLI-MacOS-v0.6.0-5.tar.gz.sha256">8d9a74da37c9b1be5f416c2f2f92f772b086da01770d8ed6a118778f87a7e568</a></p-->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col1 pr-2">
+            <p class="text-center"><i class="fa fa-windows fa-5x text-primary"></i></p>
+            <p class="text-center">Windows</p>
+            <a href="https://github.com/VerusCoin/Agama/releases/download/v0.6.0-5/Agama-Windows-v0.6.0-5.zip" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Windows Wallet v0.6.0-5" style="width:90%!important">Graphical Wallet v0.6.0-5</a>
+            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/Agama/releases/download/v0.6.0-5/Agama-Windows-v0.6.0-5.zip.sha256">f659fb6bf3c20933fd264dd0f50cfd64c2df07ee73f56792054cbdb9abd26e14</a></p>
+            <a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-5/Verus-CLI-Windows-v0.6.0-5.zip" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Windows CLI v0.6.0-5" style="width:90%!important">Command Line v0.6.0-5</a>
+            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-5/Verus-CLI-Windows-v0.6.0-5.zip.sha256">e8f9b060d37e7028714d8c078705c8d6ceaef51b0d6f4c121cfbe40ab781b16f</a></p>
+          </div>
+          <div class="col2 px-2">
+            <p class="text-center"><i class="fa fa-linux fa-5x text-primary"></i></p>
+            <p class="text-center">Linux</p>
+            <a href="https://github.com/VerusCoin/Agama/releases/download/v0.6.0-5/Agama-Linux-v0.6.0-5.tar.gz" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Linux Wallet v0.6.0-5" style="width:90%!important">Graphical Wallet v0.6.0-5</a>
+            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/Agama/releases/download/v0.6.0-5/Agama-Linux-v0.6.0-5.tar.gz.sha256">b37886ed4d1fba08cf8174aef2ef2628510fa95c2fae22f3264006770df57329</a></p>
+            <a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-5/Verus-CLI-Linux-v0.6.0-5-amd64.tar.gz" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin Linux CLI v0.6.0-5" style="width:90%!important">Command Line v0.6.0-5</a>
+            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-5/Verus-CLI-Linux-v0.6.0-5-amd64.tar.gz.sha256">27aa9d8d4a89dadf1a87928664eef7dc70ef92624d62596ee6e699b064f17daa</a></p>
+          </div>
+          <div class="col3 pl-2">
+            <p class="text-center"><i class="fa fa-apple fa-5x text-primary"></i></p>
+            <p class="text-center">MacOS</p>
+            <a href="https://github.com/VerusCoin/Agama/releases/download/v0.6.0-5/Agama-MacOS-v0.6.0-5.dmg" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin MacOS Wallet v0.6.0-5" style="width:90%!important">Graphical Wallet v0.6.0-5</a>
+            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/Agama/releases/download/v0.6.0-5/Agama-MacOS-v0.6.0-5.dmg.sha256">354426da00105a3ff13190aceb0cfdaa9cbbda667848b9571369b4ee4da79637</a></p>
+            <a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-5/Verus-CLI-MacOS-v0.6.0-5.tar.gz" class="btn btn-secondary d-block mx-auto w-75" title="VerusCoin MacOS CLI v0.6.0-5" style="width:90%!important">Command Line v0.6.0-5</a>
+            <p class="checksum">SHA256:<a href="https://github.com/VerusCoin/VerusCoin/releases/download/v0.6.0-5/Verus-CLI-MacOS-v0.6.0-5.tar.gz.sha256">8d9a74da37c9b1be5f416c2f2f92f772b086da01770d8ed6a118778f87a7e568</a></p>
           </div>
         </div>
       </div>
