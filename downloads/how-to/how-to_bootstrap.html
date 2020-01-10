@@ -114,23 +114,25 @@ Windows 10: `%AppData%\Komodo\VRSC\`
             Automated bootstrap scripts:
           </h4>
           <p>
-            <a href="https://github.com/Oink70/VerusExtras/releases/download/v1.0.2/VRSC-bootstrap-win.bat">Windows 10</a> (Tested on build 18362.418)<br>
-            <a href="https://github.com/Oink70/VerusExtras/releases/download/v1.0.2/VRSC-bootstrap-linux.sh">Linux</a> (Tested on Ubuntu 18.04)<br>
-            <a href="https://github.com/Oink70/VerusExtras/releases/download/v1.0.2/VRSC-bootstrap-mac.command">MacOS</a> (Tested on Mac OS 10.14 Mojave)<br>
+            <a href="https://github.com/Oink70/VerusExtras/releases/download/v1.0.3/VRSC-bootstrap-win.bat">Windows 10</a> (Tested on build 18362.418)<br>
+            <a href="https://github.com/Oink70/VerusExtras/releases/download/v1.0.3/VRSC-bootstrap-linux.sh">Linux</a> (Tested on Ubuntu 18.04)<br>
+            <a href="https://github.com/Oink70/VerusExtras/releases/download/v1.0.3/VRSC-bootstrap-mac.command">MacOS</a> (Tested on Mac OS 10.14 Mojave)<br>
           </p>
           <h4>
             Necessary files:
           </h4>
           <p>
             Link 1: <a href="../../wallet.html" target="_blank">Download latest Wallet</a><br>
-            Link 2: <a href="https://bootstrap.0x03.services/veruscoin/VRSC.html" target="_blank">Download Verus Bootstrap</a>
+            Link 2: <a href="https://bootstrap.veruscoin.io/" target="_blank">Download Verus Bootstrap</a>
           </p>
 
 <!-- insert formatted procedure text in this section -->
           <h4>Procedure:</h4>
           <pre>
 If you do not feel confident in executing the instructions listed below, consider using the automated bootstrap script
-available for your Operating system.
+available for your Operating system. In some cases you will be asked by community members to execute the manual procedure,
+since the script does not delete any files, it only overwrites the chain data with the most recent version from the
+bootstrap archive.
 
 1) Make sure Agama is not active.
 2) If you already had Agama running, backup essential files:
@@ -144,9 +146,12 @@ available for your Operating system.
 	3c) Run the file you just downloaded to install it.
 4) Installing the bootstrap:
   4a) Download the bootstrap from Link 2.
-  4b) Verify the SHA256 checksum of your download, to verify you have an untampered Bootstrap.
+      (For Windows a zip archive is available to accomodate native extraction. Linux and MacOS users
+      can use the tar.gz archive)
+  4b) (Optional, but recommended) Verify the md5, sha256 or sha512 checksum of your download, to verify
+      you downloaded an untampered Bootstrap archive.
   4c) Remove all files and folders from `Agama Wallet Location` except `wallet.dat` and `VRSC.conf`.
-  4d) Unpack (using 7-zip when in Windows) the downloaded archive to `Agama Wallet location`.
+  4d) Unpack the downloaded archive to `Agama Wallet location`.
 5) If you had Agama running before, restore essential files:
 	5a) Go to `Agama Wallet location`
 	5b) Verify that your `Wallet.dat` is bigger than the one in this folder (if any is present)
