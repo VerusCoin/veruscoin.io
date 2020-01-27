@@ -98,12 +98,6 @@
           <p>Read it completely before use.</p>
 
 <!-- Insert Vital information in this section -->
-          <!--pre>
-'Agama Wallet location` on different OS:
-Linux GUI: `~/.Komodo/VRSC`
-Mac OS: `/Users/<YOURUSERNAME>/Library/Application Support/Komodo/VRSC`
-Windows 10: `%AppData%\Komodo\VRSC\`
-          </pre-->
 
 <!-- Insert all Software links in this section -->
           <h4>
@@ -141,14 +135,15 @@ NHEQMINER:
   - run `start.bat` to start mining
 
 CCMINER:
-  - Change to the folder you put the three files in (`run.vershhash.bat`, `libcrypto-1_1-x64.dll` & `ccminer.exe`)
+  - Change to the folder you put the three files from the downloaded archive in (`run.vershhash.bat`, `libcrypto-1_1-x64.dll` & `ccminer.exe`)
+  - edit the `run.vershhash.bat`
   - The line, that needs to be adjusted:
-      `ccminer -a verus -o stratum+tcp://na.luckpool.net:3956 -u REoPcdGXthL5yeTCrJtrQv5xhYTknbFbec.bob -p d=6 -t 8`
+      `ccminer -a verus -o stratum+tcp://na.luckpool.net:3956 -u REoPcdGXthL5yeTCrJtrQv5xhYTknbFbec.Donator -p d=6 -t 8`
   - adjust the line, so it looks like:
-      `C:\Windows\System32\cmd.exe /c start "ccminerCPUv3.5 VerusPool" /Low "c:\Miners\CCminer 2.0 CPU Release 3.5\ccminer.exe" -a verus -o stratum+tcp://pool.veruscoin.io:9999 -u RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ.CCminer -t 16`
+      `C:\Windows\System32\cmd.exe /c start "ccminerCPUv3.5 VerusPool" /Low "c:\Miners\CCminer 2.0 CPU Release 3.5\ccminer.exe" -a verus -o stratum+tcp://pool.veruscoin.io:9999 -u RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ.Donator -t 16`
   - make sure you replave the pool (`stratum+tcp://pool.veruscoin.io:9999`) with your prefered pool and the address
     (`RVjvbZuqSGLGDm1B9BFkbHWySPKEx4tfjQ`) with your own address. The address shown in this line is the veruscoin
-    foundation donation address. If desired change the identifier (`CCminer`) to a name that easily identifies the
+    foundation donation address. If desired change the identifier (`Donator`) to a name that easily identifies the
     miner to you.
   - save and exit the file
   - run `run.vershhash.bat` to start mining.

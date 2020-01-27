@@ -96,6 +96,7 @@
 
 <!-- Additional remarks -->
 <p>Read it completely before use.</p>
+<p>Shielding is no longer required for coinbase rewards after block 800200.</p>
 <p>
   General remarks on CLI wallet:<br>
   <ul style="list-style-type:disc;">
@@ -104,6 +105,13 @@
     <li>In MacOS shell preceed the commands without surrounding quotation marks with <kbd>./</kbd></li>
   </ul>
   for example the windows version <kbd>verus listtransactions</kbd> transforms in Linux or MacOS to <kbd>./verus listtransactions</kbd>.
+</p>
+<p>
+  General remarks on Windows command line formatting:
+  <ul style="list-style-type:disc;">
+    <li>The CLI help shows the command format for Linux and MacOS.</li>
+    <li>For windows substitute the shown <kbd>'</kbd>-character with the <kbd>"</kbd>-character.</li>
+    <li>For windows substitute the shown <kbd>"</kbd>-character with the <kbd>\"</kbd>-characters.</li>
 </p>
 
 <!-- Insert Vital information in this section -->
@@ -157,7 +165,7 @@ Once the funds have moved to the zaddr and are confirmed, you can freely send th
 To send from a certain zaddr to a transparent address, use z_sendmany. The following command sends 10 Verus to a given transparent address.
 TADDR=Ryouraddresss
 
-  `verus z_sendmany zcZpfuzzJqmNJ3fUJekvbnyuxuJe9eAURAHrMCvN2Nr7VuWjakb1LEw6j2etPcCnr45BRot7MaMbipuS5da162BfuUkFGxx "[{"amount":10,"address":"$TADDR"}]"`
+  `verus z_sendmany zcZpfuzzJqmNJ3fUJekvbnyuxuJe9eAURAHrMCvN2Nr7VuWjakb1LEw6j2etPcCnr45BRot7MaMbipuS5da162BfuUkFGxx '[{"amount":10,"address":"$TADDR"}]'`
           </pre>
 <!-- Insert closing words in this section -->
           <p>
