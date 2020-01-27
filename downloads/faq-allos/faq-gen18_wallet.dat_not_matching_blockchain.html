@@ -101,39 +101,32 @@
           </p>
 
 <!-- Insert Vital information in this section -->
-          <!--pre>
-'Agama Wallet location` on different OS:
-Linux GUI: `~/.Komodo/VRSC`
-Mac OS: `/Users/<YOURUSERNAME>/Library/Application Support/Komodo/VRSC`
-Windows 10: `%AppData%\Komodo\VRSC\`
-          </pre-->
 
 <!-- Insert all Software links in this section -->
-          <!--h3>
-            Usefull auxiliary Windows software:
-          </h3>
-          <p>
-            <a href="https://raylin.wordpress.com/downloads/md5-sha-1-checksum-utility/" target="_blank">Checksum utility</a><br>
-            <a href="https://www.7-zip.org/" target="_blank">7-zip</a>
-          </p>
-          <h3>
-            Necessary files:
-          </h3>
-          <p>
-            Link 1: <a href="../../wallet.html" target="_blank">Download latest Wallet</a><br>
-            Link 2: <a href="https://bootstrap.0x03.services/veruscoin/VRSC.html" target="_blank">Download Verus Bootstrap</a>
-          </p-->
 
 <!-- insert formatted procedure text in this section -->
           <h4>Procedure:</h4>
           <pre>
-1. go to the "Receive" screen and make a new private address
-2. Copy the new private address to your clipboard
-3. Go to the "Send" screen and select "Shield a coinbase"
-4. Leave "Transparent funds" as the source and paste the new zaddress into the destination
-5. Click on "Shield funds"
-6. Wait a while until you have a private balance showing on the transactions screen
-7. Send again, this time from your private address to any normal transparent receive address that you have.
+Agama Wallet:
+  1. go to the "Receive" screen and make a new private address
+  2. Copy the new private address to your clipboard
+  3. Go to the "Send" screen and select "Shield a coinbase"
+  4. Leave "Transparent funds" as the source and paste the new zaddress into the destination
+  5. Click on "Shield funds"
+  6. Wait a while until you have a private balance showing on the transactions screen
+  7. Send again, this time from your private address to any normal transparent receive address that you have.
+
+Verus Desktop:
+  As of block 800200 the need to shield newly received coinbase rewards is no longer present. The newly received
+  rewards will have to be moved, before they can participate in staking.
+  Only timelocked rewards from the early mining period will need shielding/unshielding.
+  1. Click on the green down arrow in the `Private Balance` section.
+  2. Copy a private address.
+  3. Go to `Settings` (Cogwheel), and click on `Coin Settings`
+  4. Type in the `native client terminal` the following command:
+      `run z_shieldcoinbase * ` followed by pasting in the z-address you just copied.
+  5. Wait a while until you have your private balance updated on the wallets screen.
+  6. Send again, this time from your private address to any normal transparent receive address that you have.
           </pre>
 <!-- Insert closing words in this section -->
           <p>

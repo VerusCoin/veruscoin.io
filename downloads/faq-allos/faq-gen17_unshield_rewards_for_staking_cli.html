@@ -105,35 +105,22 @@
                       </ul>
                       for example the windows version <kbd>verus listtransactions</kbd> transforms in Linux or MacOS to <kbd>./verus listtransactions</kbd>.
                     </p>
+                    <p>
+                      General remarks on Windows command line formatting:
+                      <ul style="list-style-type:disc;">
+                        <li>The CLI help shows the command format for Linux and MacOS.</li>
+                        <li>For windows substitute the shown <kbd>'</kbd>-character with the <kbd>"</kbd>-character.</li>
+                        <li>For windows substitute the shown <kbd>"</kbd>-character with the <kbd>\"</kbd>-characters.</li>
+                    </p>
 
 <!-- Insert Vital information in this section -->
-          <!--pre>
-'Agama Wallet location` on different OS:
-Linux GUI: `~/.Komodo/VRSC`
-Mac OS: `/Users/<YOURUSERNAME>/Library/Application Support/Komodo/VRSC`
-Windows 10: `%AppData%\Komodo\VRSC\`
-          </pre-->
 
 <!-- Insert all Software links in this section -->
-          <!--h3>
-            Usefull auxiliary Windows software:
-          </h3>
-          <p>
-            <a href="https://raylin.wordpress.com/downloads/md5-sha-1-checksum-utility/" target="_blank">Checksum utility</a><br>
-            <a href="https://www.7-zip.org/" target="_blank">7-zip</a>
-          </p>
-          <h3>
-            Necessary files:
-          </h3>
-          <p>
-            Link 1: <a href="../../wallet.html" target="_blank">Download latest Wallet</a><br>
-            Link 2: <a href="https://bootstrap.0x03.services/veruscoin/VRSC.html" target="_blank">Download Verus Bootstrap</a>
-          </p-->
 
 <!-- insert formatted procedure text in this section -->
           <h4>Procedure:</h4>
           <pre>
-I am in the verus-cli folder on ubuntu 18.04, but the procedure is similar in all CLI versions.
+
 1) `verus z_shieldcoinbase "*" my_private_address_without_quotationmarks`
     this capture all so called coinbases, i.e. mined coins that are not yet staking.
     you have to wait 100 blocks (minutes) after receiving them before being able to move them.
@@ -148,7 +135,7 @@ I am in the verus-cli folder on ubuntu 18.04, but the procedure is similar in al
     and to enable staking you can run the following bash command:
       `verus setgenerate true 0`
 
-Note: I am always using the same private address.
+
           </pre>
 <!-- Insert closing words in this section -->
           <p>
