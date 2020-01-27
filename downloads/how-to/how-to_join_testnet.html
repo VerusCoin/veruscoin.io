@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+
+    <title>VerusCoin | How-To | Join the VRSC testnet</title>
+
+    <link rel="shortcut icon" href="../../verus-favicon.png">
+
+	<link rel="image_src" href="https://veruscoin.io/img/veruslogolarge.png" />
+
+	<meta property="og:image" content="https://veruscoin.io/img/veruslogolarge.png" />
+	<meta property="og:url" content="https://veruscoin.io" />
+	<meta property="og:title" content="VerusCoin" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Community driven open source CPU mineable cryptocurrency with 50/50 Proof-of-Work/Proof-of-Stake, zk-SNARK zero-knowledge proof privacy." />
+
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../../vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link href="../../css/landing-page.min.css" rel="stylesheet">
+    <link href="../../css/master.css" rel="stylesheet">
+    <link href="../../css/overrides.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Scroll to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- End -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="/"><img class="mr-0" src="../../img/VRSClogo.svg" style="height: 70px;"></a>
+          <div id="mobile-button">
+            <span id="line-top" class="mobile-button-line"></span>
+            <span id="line-mid" class="mobile-button-line"></span>
+            <span class="mobile-button-line"></span>
+          </div>
+          <script>
+              $('#mobile-button').click( function() {
+                  $("#main-menu").toggleClass("mobile-menu-show");
+          });
+          </script>
+            <ul id="main-menu" class="list-inline mb-0 mr-4 pr-4">
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="../../index.html">Home</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="../../wallet.html">Verus wallet</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="../../getVRSC.html">Get VRSC</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="https://explorer.veruscoin.io" target="_blank">Explorer</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="https://medium.com/VerusCoin" target="_blank">Blog</a>
+              </li>
+              <li class="list-inline-item list-menu-item">
+                <a class="nav-link js-scroll-trigger active" href="../../service.html">FAQ & How-To</a>
+              </li>
+            </ul>
+      </div>
+    </nav>
+
+    <header class="masthead text-white text-center" style="padding-top: 2rem;padding-bottom: 2rem;">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 mx-auto">
+            <!--<h1 class="mb-5">Verus</h1>-->
+          </div>
+          <div class="col-lg-4 mx-auto">
+            <img style="width:100%;" src="../../img/verustitle.svg" />
+            <span class="tagline-new">Truth and Privacy for All</span>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="maincontent" id="How-To">
+      <section id="Bootstrap" class="bootstrap">
+        <div class="container">
+
+<!-- Insert title of FAQ - How-to in this section -->
+          <h2 class="mb-5">How-To Join VRSC testnet.</h2>
+
+<!-- Additional remarks -->
+          <p>Read it completely before using.</p>
+
+<!-- Insert Vital information in this section -->
+          <h4>Important General Information</h4>
+          <pre>
+'VRSCTEST data location` on different OS:
+Linux GUI: `~/.Komodo/VRSCTEST`
+Mac OS: `/Users/<YOURUSERNAME>/Library/Application Support/Komodo/VRSCTEST`
+Windows 10: `%AppData%\Roaming\Komodo\VRSCTEST\`
+</pre>
+<p>
+  General remarks on CLI wallet:<br>
+  <ul style="list-style-type:disc;">
+    <li>On Windows command line enter the commands as shown without the surrounding quotation marks</li>
+    <li>In Linux shell preceed the commands without surrounding quotation marks with <kbd>./</kbd></li>
+    <li>In MacOS shell preceed the commands without surrounding quotation marks with <kbd>./</kbd></li>
+  </ul>
+  for example the windows version <kbd>verus listtransactions</kbd> transforms in Linux or MacOS to <kbd>./verus listtransactions</kbd>.
+</p>
+<p>
+  General remarks on Windows command line formatting:
+  <ul style="list-style-type:disc;">
+    <li>The CLI help shows the command format for Linux and MacOS.</li>
+    <li>For windows substitute the shown <kbd>'</kbd>-character with the <kbd>"</kbd>-character.</li>
+    <li>For windows substitute the shown <kbd>"</kbd>-character with the <kbd>\"</kbd>-characters.</li>
+</p>
+
+<!-- Insert all Software links in this section -->
+              Necessary files:
+          </h4>
+          <p>
+            Link 1: <a href="../../wallet.html" target="_blank">Download latest Wallet</a><br>
+          </p>
+
+<!-- insert formatted procedure text in this section -->
+          <h4>Procedure:</h4>
+          <pre>
+Joining Verus testnet to test the latest capabilities before they are released to mainnet or simply test if your goals are possible
+without spending VRSC (testnet coins hold no value) is easy.
+
+**Download a wallet**
+The first thing you need is a VRSC wallet. The CLI-wallet and Verus Desktop GUI wallet are available on the link above for Windows,
+Linux and MacOS. If you already have a wallet verify that the wallet is the most recent version and update if needed.
+
+**Verus Desktop Wallet**
+1) Start your Verus Desktop wallet.
+2) If you have never run Verus testnet on your system before:
+  a) Go to `settings` (cogwheel icon) and select `General Settings`.
+  b) Select `Enable VRSCTEST`.
+  c) Click `Save Changes`
+  d) Restart Verus desktop
+7) When logged in, click `Add Coin`, select `Verus Testnet` and click `Continue`.
+8) Select the startup parameters you desire (Native (Lite mode is not available on testnet), Staking, mining (specify number of threads),
+   reindex blockchain and/or rescan wallet) and click `Add Coin`.
+
+
+**CLI wallet**
+1) start CLI walletdaemon using these parameters:
+   `verusd -chain=VRSCTEST`
+   Any extra parameter that you are used to for VRSC (like `-mint` or `-pubkey=`) can be appended as well.
+2) commands through the CLI are in the following format:
+   `verus -chain=VRSCTEST <command>`
+   The only difference with the normal VRSC chain is the `-chain=VRSCTEST` option, that is added.
+
+
+          </pre>
+<!-- Insert closing words in this section -->
+          <p>
+            Created by @Oink, inspired by @0x03.
+          </p>
+        </div>
+      </section>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <p class="text-muted small mb-4 mb-lg-0">&copy; 2020 The Verus Project. All Rights Reserved.</p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="https://twitter.com/veruscoin" title="Official Verus Twitter Feed">
+                  <img style="height: 32px; position: relative; top: -7px" src="../../img/twitter.svg">
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                  <a href="https://discord.gg/VRKMP2S" title="Verus Discord">
+                      <img style="height: 32px; position: relative; top: -7px" src="../../img/discord.svg">
+                  </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://medium.com/@veruscoin" title="Official Verus Medium">
+                  <img style="height: 32px; position: relative; top: -7px" src="../../img/medium.svg">
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://reddit.com/r/veruscoin" title="Official Verus Reddit Feed">
+                  <img style="height: 32px; position: relative; top: -7px" src="../../img/reddit.svg">
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://bitcointalk.org/index.php?topic=4070404.0" title="Verus thread on Bitcointalk">
+                  <img style="height: 32px; position: relative; top: -7px" src="../../img/bitcointalk.svg">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/veruscoin/veruscoin" title="Verus Github repository">
+                  <img style="height: 32px; position: relative; top: -7px" src="../../img/github.svg">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      }
+    </script>
+  </body>
+</html>
